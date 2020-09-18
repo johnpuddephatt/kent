@@ -6,7 +6,7 @@ intro: |
   We connect people and groups in Kent involved in community led housing and would love you to join us.
 
   We facilitate training and networking events, share our findings and distribute useful information.
-image: join
+icon: join
 eleventyNavigation:
   key: Join us
 ---

@@ -6,7 +6,7 @@ intro: |
   There are many organisations in the UK working to help community led housing become a mainstream housing option.
 
   There are also a significant number of local initiatives doing fantastic work across Kent.
-image: resources
+icon: resources
 eleventyNavigation:
   key: Resources
 ---

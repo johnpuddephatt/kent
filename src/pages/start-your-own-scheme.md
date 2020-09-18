@@ -4,7 +4,7 @@ title: Start your own scheme
 subtitle: Everything you need to transform where you live
 intro: |
   The housing market is failing to meet the needs of our communities, especially in terms of affordability and the types of housing. The good news is people across the country are taking matters into their own hands - and you can too.
-image: start
+icon: start
 eleventyNavigation:
   key: Start your own scheme
 ---

@@ -1,7 +1,8 @@
 {
   "title": "Kent Community Housing Hub",
   "description": "Laying the foundations for better homes.",
-  "url": "https://eleventastic.netlify.app",
+  "url": "https://kentcommunityhousinghub.org",
+  "image": "/assets/images/meta.jpg",
   "lang": "en",
   "locale": "en_uk"
 }
