@@ -1,0 +1,135 @@
+---
+layout: base
+---
+
+<div class="hero">
+  <div class="container">
+    <div class="hero__text">
+      <h1 class="hero__heading">{{ home.hero_title }}</h1>
+      <p class="hero__description">{{ home.hero_description}}</p>
+      {% if home.hero_button_link %}<a class="button button--white" href="{{ home.hero_button_link }}">{{ home.hero_button_text }}</a>{% endif %}
+    </div>
+    <div class="hero__image">
+      {% icon "home-hero", "", 950, 457 %}
+    </div>
+  </div>
+</div>
+
+<div class="whatwedo">
+  <div class="container container--top">
+      <div class="whatwedo__text">
+        <h1 class="whatwedo__heading">{{ home.whatwedo_title }}</h1>
+        <div class="whatwedo__description">{{ home.whatwedo_description | nl2br | safe }}</div>
+      </div>
+      <div class="whatwedo__image">
+        {% icon "home-whatwedo", "", 299, 234 %}
+      </div>
+  </div>
+
+  <div class="container container--middle">
+    <div class="whatwedo__item">
+      <div class="whatwedo__icon">
+        {% icon "speech" %}
+      </div>
+      <div class="whatwedo__item__text">
+        <h3 class="whatwedo__item__heading">Get support.</h3>
+        <p>Want to create your own housing scheme? We’ll help you find available land and access the financing you need.</p>
+      </div>
+    </div>
+    <div class="whatwedo__item">
+      <div class="whatwedo__icon">
+        {% icon "link" %}
+      </div>
+      <div class="whatwedo__item__text">
+        <h3 class="whatwedo__item__heading">Make connections.</h3>
+        <p>We’ll help you link up and collaborate with other housing groups - close by and further afield.</p>
+      </div>
+    </div>
+    <div class="whatwedo__item">
+      <div class="whatwedo__icon">
+        {% icon "envelope" %}
+      </div>
+      <div class="whatwedo__item__text">
+        <h3 class="whatwedo__item__heading">Stay updated.</h3>
+        <p>Join our mailing list to get all the latest updates, advice and events delivered straight to your inbox.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container--bottom">
+    <a href="/start" class="button button--white">Start your housing scheme</a>
+  </div>
+
+</div>
+
+
+<div class="clh">
+  <div class="container">
+    <div class="clh__image">
+      {% icon "home-clh", "", 317, 335 %}
+    </div>
+
+    <div class="clh__text">
+      <h1 class="clh__heading">{{ home.clh_title }}</h1>
+      <p class="clh__description">{{ home.clh_description}}</p>
+
+      <div class="clh__box">
+        <div class="clh__box__item">
+          {% icon "money" %}
+          <p>Secure, affordable homes that people want and need.</p>
+        </div>
+        <div class="clh__box__item">
+          {% icon "environment" %}
+          <p>Direct influence over homes and the local environment.</p>
+        </div>
+        <div class="clh__box__item">
+          {% icon "people" %}
+          <p>Valuable support networks for residents and communities.</p>
+        </div>
+        <div class="clh__box__item">
+          {% icon "sun" %}
+          <p>A genuine alternative to developer-led housing designed for profit.</p>
+        </div>
+
+        <a class="button button--orange" href="/community-led-housing/">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if collections.posts.length >= 3 %}
+  <div class="news">
+    <div class="container container--top">
+      <h2 class="news__heading">{{ home.news_title }}</h2>
+    </div>
+    <div class="container container--middle container--narrow news__posts">
+      {% for post in collections.posts | limit(3) %}
+        <a href="{{ post.url | url }}" class="news__post">
+        {% icon "blog--" + post.data.icon %}
+          <div class="news__post__text">
+            <h2 class="news__post__title">{{ post.data.title }}</h2>
+            <p>{{ post.templateContent | excerpt }}</p>
+          </div>
+
+          <span class="read-more">Read more</span>
+        </a>
+      {% endfor %}
+    </div>
+    <div class="container container--bottom">
+      <a href="/posts/" class="button">See all news</a>
+    </div>
+  </div>
+{% endif %}
+
+<div class="signup">
+  <div class="container">
+      <div class="signup__image">
+        {% icon "home-signup", "", 378, 327 %}
+      </div>
+      <div class="signup__text">
+        <h1 class="signup__heading">{{ home.signup_title }}</h1>
+        <div class="signup__description">{{ home.signup_description | nl2br | safe }}</div>
+        {% include "signup.njk" %}
+      </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.header {
+    padding: $spacing 0;
+    box-shadow: $box-shadow;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+      text-decoration: none;
+
+      .icon {
+        width: 2.5 * $spacing;
+        height: 2.5 * $spacing;
+        margin-right: $spacing/4;
+      }
+    }
+
+    &__title {
+      font-size: ms(1);
+      color: $brand-color-primary;
+      font-weight: 900;
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 6.5em;
+      line-height: $heading-line-height;
+    }
+}

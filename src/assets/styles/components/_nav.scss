@@ -1,0 +1,61 @@
+.nav {
+    &__menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+    }
+    &__item {
+      margin: 0 $spacing/2;
+
+      &--active {
+        border-bottom: 0.2rem solid $brand-color-secondary;
+      }
+    }
+    &__link {
+        display: block;
+        font-weight: 900;
+        text-decoration: none;
+        padding: $spacing/4 0;
+        text-transform: lowercase;
+    }
+    &__toggle {
+        @include button-reset;
+    }
+
+    @include mq-down(lg) {
+        &.is-open &__menu {
+            margin-top: 2 * $spacing;
+            display: block;
+            border-radius: $border-radius;
+            animation: fadeUp 0.5s forwards;
+            box-shadow: $box-shadow-elevated;
+        }
+    }
+
+    @include mq(lg) {
+        &__toggle {
+            display: none;
+        }
+        &__menu {
+            display: flex;
+            position: static;
+            background-color: transparent;
+        }
+    }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(1em);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

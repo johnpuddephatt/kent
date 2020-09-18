@@ -1,0 +1,53 @@
+.button {
+  position: relative;
+  display: inline-block;
+  border: 0.2em solid $brand-color-primary;
+  border-radius: 999999px;
+  color: $brand-color-primary;
+  background-color: transparent;
+  text-decoration: none;
+  line-height: 1.5 * $line-height;
+  padding: 0 $spacing;
+  font-weight: $font-weight-bold;
+  text-transform: lowercase;
+
+  &--orange {
+    border-color: $brand-color-secondary;
+    color: $text-color;
+  }
+
+  &--white {
+    background-clip: padding-box;
+    background-color: transparentize(#fff, 0.15);
+    border: none;
+    color: $brand-color-primary;
+    line-height: 2 * $line-height;
+    transition: border-color 1s $animation-curve-default;
+    box-shadow: $box-shadow-elevated;
+  }
+
+  &--arrowed {
+    padding-right: $spacing;
+    
+    &:hover {
+      border-color: transparentize($brand-color-primary,0.5);
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      content: '>';
+      font-size: ms(5);
+      line-height: 1;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-60%);
+      opacity: 0.75;
+      right: $spacing/4;
+      transition: opacity 1s $animation-curve-default;
+
+    }
+  }
+}

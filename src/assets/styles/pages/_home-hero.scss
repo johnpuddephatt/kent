@@ -1,0 +1,51 @@
+.hero {
+  background-color: $brand-linen;
+  padding: 4 * $spacing 0;
+
+  .container {
+    @include orientation(landscape) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+
+
+    flex: 1;
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include orientation(portrait) {
+        width: 75%;
+      }
+    }
+
+    @extend %textured;
+
+  }
+
+  &__text {
+    flex: 0 0 47.5%;
+    padding-right: $spacing;
+    @include orientation(portrait) {
+      padding-right: 0;
+      padding-bottom: $spacing;
+    }
+  }
+
+  &__heading {
+    margin-bottom: $spacing/2;
+    font-size: ms(5);
+  }
+
+  &__description {
+    margin-bottom: $spacing/2;
+    font-size: ms(0);
+  }
+}

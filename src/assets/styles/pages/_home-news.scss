@@ -1,0 +1,93 @@
+.news {
+  padding: 0 0 2 * $spacing;
+
+  .container {
+    &--top {
+      text-align: center;
+      padding-bottom: $spacing;
+    }
+
+    &--middle {
+      display: block;
+      @include orientation(landscape) {
+        padding-top: $spacing;
+        padding-bottom: $spacing;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &--bottom {
+      padding-top: $spacing;
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    font-size: ms(3);
+  }
+
+  &__posts {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      display: block;
+      left: 0;
+      width: 100vw;
+      height: 12 * $spacing;
+      @include orientation(landscape) {
+        height: 3 * $spacing;
+      }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: repeating-linear-gradient(
+        0deg,
+        transparentize($brand-mint, 1),
+        transparentize($brand-mint, 1) $spacing/4,
+        $brand-mint $spacing/4,
+        $brand-mint (2 * $spacing/4)
+      );
+    }
+  }
+
+  &__post {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-elevated;
+    flex: 1;
+    border: 0.5px solid $gray-lightest;
+    background-color: #fff;
+    margin: $spacing 0;
+    padding: $spacing;
+    text-decoration: none;
+    transition: box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: column;
+
+    @include orientation(landscape) {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      + .news__post {
+        margin-left: 2 * $spacing;
+      }
+    }
+
+    &__title {
+      font-weight: $font-weight-bold;
+      font-size: ms(1);
+      margin-bottom: $spacing/2;
+    }
+
+    svg {
+      width: 65%;
+      height: auto;
+      margin: 0 auto $spacing;
+    }
+  }
+}

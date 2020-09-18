@@ -1,0 +1,30 @@
+<footer class="footer" role="contentinfo">
+    <div class="footer__inner container container--wide">
+      <div class="footer__section footer__title">
+        {{ meta.title }}
+      </div>
+
+      <div class="footer__section is-contact-menu">
+        <h3 class="footer__section__heading">Contact</h3>
+        <p>{{ contact.name }}</p>
+
+        <a href="tel:{{ contact.phone_main }}">
+          {% icon "speech" %} {{ contact.phone_main }}
+        </a>
+
+        <a href="tel:{{ contact.phone_mobile }}">
+          {% icon "speech" %} {{ contact.phone_mobile }}
+        </a>
+
+        <a href="mailto:{{ contact.email }}">
+          {% icon "envelope" %} {{ contact.email }}
+        </a>
+      </div>
+
+      <div class="footer__section">
+        <h3 class="footer__section__heading">Address</h3>
+        {{ contact.address }}
+      </div>
+
+    </div>
+</footer>
