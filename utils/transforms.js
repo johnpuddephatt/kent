@@ -29,8 +29,8 @@ module.exports = {
                     base: `${buildDir}/`,
                     html: content,
                     inline: true,
-                    width: 1280,
-                    height: 800
+                    width: 1360,
+                    height: 900
                 }
                 const { html } = await critical.generate(config)
                 return html
