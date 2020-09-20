@@ -20,6 +20,24 @@
         padding: $spacing/4 0;
         text-transform: lowercase;
     }
+    &__social {
+      margin-left: $spacing/2;
+      @include mq-down(lg) {
+        display: inline-block;
+        margin: $spacing $spacing/2 $spacing $spacing/2;
+      }
+      a {
+        font-size: ms(-1);
+        background-color: $brand-color-primary;
+        color: white;
+        padding: $spacing/4;
+        border-radius: 9999px;
+        width: 1.25 * $spacing;
+        height: 1.25 * $spacing;
+        line-height: $spacing/2;
+        text-align: center;
+      }
+    }
     &__toggle {
         @include button-reset;
     }

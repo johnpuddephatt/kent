@@ -19,7 +19,7 @@
       }
 
       @include orientation(landscape) {
-        max-width: 14rem;
+        max-width: 18rem;
 
         + .footer__section {
           margin-top: 0;

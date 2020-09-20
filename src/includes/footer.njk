@@ -8,11 +8,11 @@
         <h3 class="footer__section__heading">Contact</h3>
         <p>{{ contact.name }}</p>
 
-        <a href="tel:{{ contact.phone_main }}">
+        <a href="tel:{{ contact.phone_main | replace(" ","") }}">
           {% icon "speech" %} {{ contact.phone_main }}
         </a>
 
-        <a href="tel:{{ contact.phone_mobile }}">
+        <a href="tel:{{ contact.phone_mobile | replace(" ","") }}">
           {% icon "speech" %} {{ contact.phone_mobile }}
         </a>
 

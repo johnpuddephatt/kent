@@ -30,6 +30,27 @@
             </a>
         </li>
     {%- endfor -%}
+    {% if meta.facebook %}
+      <li class="nav__social">
+        <a class="nav__link" href="{{meta.facebook}}" target="_blank">
+          {% icon "facebook" %}
+        </a>
+      </li>
+    {% endif %}
+    {% if meta.twitter %}
+      <li class="nav__social">
+        <a class="nav__link" href="{{meta.twitter}}" target="_blank">
+          {% icon "twitter" %}
+        </a>
+      </li>
+    {% endif %}
+    {% if meta.instagram %}
+      <li class="nav__social">
+        <a class="nav__link" href="{{meta.instagram}}" target="_blank">
+          {% icon "instagram" %}
+        </a>
+      </li>
+    {% endif %}
     </ul>
 
 </nav>
