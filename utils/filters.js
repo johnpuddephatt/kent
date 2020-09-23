@@ -3,13 +3,13 @@ const slugify = require('slugify')
 
 module.exports = {
     dateToFormat: function (date, format) {
-        return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(
+        return DateTime.fromJSDate(date, { zone: 'Europe/London' }).toFormat(
             String(format)
         )
     },
 
     dateToISO: function (date) {
-        return DateTime.fromJSDate(date, { zone: 'utc' }).toISO({
+        return DateTime.fromJSDate(date, { zone: 'Europe/London' }).toISO({
             includeOffset: false,
             suppressMilliseconds: true
         })

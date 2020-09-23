@@ -1,0 +1,35 @@
+.post {
+
+  &__date {
+    font-weight: $font-weight-bold;
+    font-size: ms(2);
+    margin-bottom: $spacing;
+    display: block;
+  }
+
+  &__header {
+    background-color: $brand-mint;
+    margin-bottom: 3 * $spacing;
+
+    &__content {
+      margin: 0 auto;
+      max-width: map-get($breakpoints, md);
+    }
+
+    .icon {
+      position: relative;
+      top: 2 * $spacing;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='623.71' height='563.67' viewBox='0 0 623.71 563.67' overflow='visible'><path fill='%23AFDBC9' d='M410.25 34.03C190.97-24.24 193.55-30.64 55.84 203.69c-170.92 290.83 85.8 457.4 296.04 298.45 0 0 570.63-332 58.37-468.11z'/></svg>");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #fff;
+      display: block;
+      width: 70%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3 * $spacing 5 * $spacing;
+    }
+  }
+}

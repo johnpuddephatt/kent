@@ -1,7 +1,19 @@
 ---
 layout: base
 ---
-<article class="container">
-    <h1>{{ title }}</h1>
+<article >
+
+  <div class="post__header">
+    <div class="post__header__content">
+      {% icon "blog--" + icon %}
+    </div>
+  </div>
+
+  <div class="container page__content">
+    <h1 class="page__title">{{ title }}</h1>
+    <time class="post__date" datetime="{{ page.date | dateToISO }}">{{ page.date | dateToFormat('DDD') }}</time>
+
     {{ content | safe }}
+  </div>
+
 </article>

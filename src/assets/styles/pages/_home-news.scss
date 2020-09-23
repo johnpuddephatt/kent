@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    justify-content: center;
 
     &::before {
       content: '';
@@ -59,7 +60,7 @@
   &__post {
     border-radius: $border-radius;
     box-shadow: $box-shadow-elevated;
-    flex: 1;
+    flex: 0 1 27.5%;
     border: 0.5px solid $gray-lightest;
     background-color: #fff;
     margin: $spacing 0;
@@ -81,6 +82,14 @@
     &__title {
       font-weight: $font-weight-bold;
       font-size: ms(1);
+      margin-bottom: 0;
+    }
+
+    &__date {
+      display: block;
+      font-size: ms(-1);
+      font-weight: $font-weight-bold;
+      margin-top: $spacing/4;
       margin-bottom: $spacing/2;
     }
 
@@ -88,6 +97,7 @@
       width: 65%;
       height: auto;
       margin: 0 auto $spacing;
+      color: $brand-orange;
     }
   }
 }

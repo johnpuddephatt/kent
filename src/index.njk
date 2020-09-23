@@ -97,17 +97,18 @@ layout: base
   </div>
 </div>
 
-{% if collections.posts.length >= 3 %}
+{% if collections.posts.length > 0 %}
   <div class="news">
     <div class="container container--top">
       <h2 class="news__heading">{{ home.news_title }}</h2>
     </div>
     <div class="container container--middle container--narrow news__posts">
-      {% for post in collections.posts | limit(3) %}
-        <a href="{{ post.url | url }}" class="news__post">
+      {% for post in collections.posts | reverse | limit(3) %}
+        <a href="{{ post.url }}" class="news__post">
         {% icon "blog--" + post.data.icon %}
           <div class="news__post__text">
             <h2 class="news__post__title">{{ post.data.title }}</h2>
+            <time class="news__post__date" datetime="{{ page.date | dateToISO }}">{{ post.date | dateToFormat('DDD') }}</time>
             <p>{{ post.templateContent | excerpt }}</p>
           </div>
 
