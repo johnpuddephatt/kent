@@ -3,8 +3,8 @@
     font-style: normal;
     font-display: block;
     font-weight: 400;
-    src: url('/assets/fonts/WorkSans-Medium.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Medium.woff') format('woff');
+    src: url('../fonts/WorkSans-Medium.woff2') format('woff2'),
+        url('../fonts/WorkSans-Medium.woff') format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-style: normal;
     font-display: block;
     font-weight: 700;
-    src: url('/assets/fonts/WorkSans-Bold.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Bold.woff') format('woff');
+    src: url('../fonts/WorkSans-Bold.woff2') format('woff2'),
+        url('../fonts/WorkSans-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -21,6 +21,6 @@
     font-style: normal;
     font-display: block;
     font-weight: 900;
-    src: url('/assets/fonts/WorkSans-ExtraBold.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-ExtraBold.woff') format('woff');
+    src: url('../fonts/WorkSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/WorkSans-ExtraBold.woff') format('woff');
 }
