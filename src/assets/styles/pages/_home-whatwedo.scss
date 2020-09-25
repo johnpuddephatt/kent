@@ -67,6 +67,7 @@
     padding: 0 $spacing;
     display: flex;
     flex-direction: row;
+    flex: 0 1 33.33%;
 
     @include orientation(portrait) {
       padding: $spacing/2 $spacing;
