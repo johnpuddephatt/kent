@@ -1,6 +1,7 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const markdownIt = require('markdown-it')
+var mila = require('markdown-it-link-attributes')
 
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
@@ -34,15 +35,23 @@ module.exports = function (config) {
     config.addWatchTarget('./src/assets')
 
     // Markdown
-    config.setLibrary(
-        'md',
-        markdownIt({
-            html: true,
-            breaks: true,
-            linkify: true,
-            typographer: true
-        })
-    )
+    let markdownIt = require("markdown-it");
+    let markdownItOptions = {
+     html: true,
+     breaks: true,
+     linkify: true,
+     typographer: true
+    };
+    let mila = require("markdown-it-link-attributes");
+    let milaOptions = {
+     pattern: /^(?!(https:\/\/kentcommunityhousinghub\.org|#)).*$/gm,
+     attrs: {
+       target: "_blank",
+       rel: "noopener noreferrer"
+     }
+    };
+    let markdownLib = markdownIt(markdownItOptions).use(mila, milaOptions);
+    config.setLibrary("md", markdownLib);
 
     // Layouts
     config.addLayoutAlias('base', 'base.njk')

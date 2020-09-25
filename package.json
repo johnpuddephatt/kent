@@ -37,6 +37,7 @@
     "html-minifier": "^4.0.0",
     "luxon": "^1.24.1",
     "markdown-it": "^11.0.0",
+    "markdown-it-link-attributes": "^3.0.0",
     "memfs": "^3.2.0",
     "modularscale-sass": "^3.0.10",
     "node-sass": "^4.14.1",
