@@ -19,18 +19,49 @@
       }
 
       @include orientation(landscape) {
-        max-width: 18rem;
+        flex: 1 0 12rem;
 
         + .footer__section {
           margin-top: 0;
-          margin-left: 2 * $spacing;
+          margin-left: $spacing;
+          @include mq(xl) {
+            margin-left: 2 * $spacing;
+          }
         }
       }
 
       &.is-contact-menu {
         a {
           display: block;
-          margin-bottom: $spacing/8
+          margin-bottom: $spacing/8;
+          white-space: nowrap;
+        }
+      }
+
+      &.is-logos {
+        flex: 1 0 18rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a {
+          flex: 1 1 35%;
+          max-width: 6rem;
+
+          &.is-wide {
+            flex: 1 1 100%;
+            max-width: 16rem;
+          }
+
+          + a {
+            margin-left: $spacing/2;
+          }
+        }
+
+        img {
+          max-width: 100%;
+          image-rendering: -webkit-optimize-contrast;
+          image-rendering: crisp-edges;
         }
       }
 
