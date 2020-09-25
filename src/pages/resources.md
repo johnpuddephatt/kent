@@ -27,10 +27,10 @@ The CCH promotes the work done by co-operative housing organisations and campaig
 ## Local Councils
 
 ### [Dover District Council – Community Led Housing](https://www.dover.gov.uk/Housing/Community-Housing/Community-Housing.aspx)
-Awarded funding via the Government's Community Housing Fund, Dover District council is helping community led housing in our region. They’re keen to ensure any communities interested in building affordable housing for locals have the knowledge and support they need.
+Awarded funding via the Government's Community Housing Fund, Dover District council is helping community led housing in the district. They’re keen to ensure any communities interested in building affordable housing for locals have the knowledge and support they need.
 
 ### [Thanet District Council – Community Led Housing](https://www.thanet.gov.uk/info-pages/community-led-housing/)
 Working in partnership with neighbouring authorities in Dover and Canterbury, Thanet  District Council are helping local communities make sensible, informed decisions about what needs to be built and where.
 
 ### [Folkestone and Hythe Council – Community Led Housing](https://folkestone-hythe.gov.uk/communityledhousing)
-Also teaming up with Dover and Thanet, Folkestone and Hythe Council are using government funding to support communities in delivering new homes through training, information and access to funds.
+Also teaming up with Dover, Thanet and Canterbury, Folkestone and Hythe Council are using government funding to support communities in delivering new homes through training, information and access to funds.
