@@ -1,0 +1,76 @@
+---
+layout: page
+title: Healthcheck
+subtitle: Something or other
+intro: |
+  adsfasdfasdfasd
+---
+{% import "forms.njk" as forms %}
+
+<form name="healthcheck" netlify>
+  <h2>Lead contact</h2>
+
+  {{ forms.input('contact_name', label='Full name', hint='Applicant name including title') }}
+  {{ forms.textarea('contact_address', label='Address', hint='Applicant address including postcode') }}
+  {{ forms.input('contact_phone_mobile', label='Phone number (mobile)') }}
+  {{ forms.input('contact_phone_landline', label='Phone number (landline)') }}
+  {{ forms.input('contact_email', label='Email address') }}
+
+  <h2>Group information</h2>
+
+  {{ forms.input('group_name', label='Full name of group') }}
+  {{ forms.select(
+    'group_no_members',
+    label='Number of members',
+    options=[{value: 'one', display: 'Just me'},
+                {value: 'two_to_five', display: '2 to 5 people'},
+                {value: 'six_to_ten', display: '6 to 10 people'},
+                {value: 'eleven_to_nineteen', display: '11 to 20 people'},
+                {value: 'twenty_plus', display: '20+ people'}]
+    )
+  }}
+
+  {{ forms.input('group_founding_date', label='When was it set up?') }}
+
+  {{ forms.select(
+    'type_of_group',
+    label='Type of group',
+    options=[{value: 'not_formally_consituted', display: 'Not formally constituted yet'},
+                {value: 'Cooperative', display: 'Co-operative for the benefit of its members'},
+                {value: 'CBS', display: 'Community Benefit Society'},
+                {value: 'Ltd_Company', display: 'Company Limited by Guarantee'},
+                {value: 'Need_help', display: 'Don’t know yet and would like your help with this'},
+                {value: 'Other', display: 'Other (please specify)'}]
+    )
+  }}
+
+  {{ forms.input('type_of_group_other', label='Additional information about type of group') }}
+
+  {{ forms.textarea('registered_address', label='Registered address of group') }}
+
+  {{ forms.boolean(
+      'is_bank_account_setup',
+      label='Does the group already have a bank account?'
+    )
+  }}
+
+  {{ forms.textarea('website', label='Website') }}
+  {{ forms.textarea('social_media_accounts', label='Social media accounts', hint='If the group has any social media accounts please list them.') }}
+
+
+  {{ forms.textarea('skills', label='Relevant skills within your group', hint='Provide a brief description of the background, skills and abilities of any individuals in the group that will be of benefit to your scheme.') }}
+
+  {{ forms.textarea('time', label='Time currently being spent working on scheme', hint='How much time do you estimate your group is spending working towards the objectives of this scheme?') }}
+
+  {{ forms.textarea('democratic_process', label='How are (or will) you engaging your local community?', hint='How have you, or how will you, engage other members of the local community in terms of a) giving their support to and/or b) being actively involved in your scheme?') }}
+
+  <h2>Scheme information</h2>
+
+  {{ forms.input('scheme_name', label='Name of scheme', hint='If known at this time') }}
+
+  {{ forms.input('scheme_location', label='Location of scheme', hint='State town or village if known') }}
+  {{ forms.input('scheme_local_authority', label='Local authority', hint='The local authority responsible for the location and surrounding area(s)') }}
+
+  <button class="button" type="submit">Submit</button>
+
+</form>

@@ -25,6 +25,7 @@
 @import 'base/utilities';
 @import 'base/screenreader';
 @import 'base/animation';
+@import 'base/forms';
 
 //--------------------
 // COMPONENTS
@@ -38,7 +39,7 @@
 @import 'components/button';
 @import 'components/page';
 @import 'components/post';
-@import 'components/form';
+@import 'components/signup';
 
 @import 'pages/home-hero';
 @import 'pages/home-whatwedo';

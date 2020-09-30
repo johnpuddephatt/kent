@@ -24,6 +24,20 @@ Established in 2007, UK Cohousing is a membership organisation raising awareness
 ### [The Confederation of Cooperative Housing](https://www.cch.coop/)
 The CCH promotes the work done by co-operative housing organisations and campaigns for quality co-operative housing solutions. They provide training and accreditation programmes, alongside lobbying the government to ensure tenants have a greater say in their housing.
 
+### [Radical Routes](https://www.radicalroutes.org.uk/)
+Network of housing and worker co-operatives working for radical social change.
+
+### [Diggers and Dreamers](https://www.diggersanddreamers.org.uk/)
+For people interested in communal living in the UK.
+
+### [Self Help Housing](http://self-help-housing.org/)
+Involves groups of people, often in housing need, bringing empty properties back into use.
+
+### [Community Self Build Agency](https://www.communityselfbuildagency.org.uk/)
+Helping people in housing need to build their own homes.
+
+### [Locality Community Led Housing Toolkit](https://mycommunity.org.uk/community-led-housing-toolkit-1-getting-your-community-led-housing-project-up-and-running)
+
 ## Local Councils
 
 ### [Dover District Council – Community Led Housing](https://www.dover.gov.uk/Housing/Community-Housing/Community-Housing.aspx)
