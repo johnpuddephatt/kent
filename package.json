@@ -27,6 +27,7 @@
     "@babel/core": "^7.11.4",
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
+    "@borisschapira/eleventy-plugin-better-slug": "^1.0.1",
     "babel-loader": "^8.1.0",
     "clean-css": "^4.2.3",
     "critical": "^2.0.3",

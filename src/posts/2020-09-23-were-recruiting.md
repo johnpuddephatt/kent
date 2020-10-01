@@ -1,5 +1,5 @@
 ---
-title: We are recruiting for a Hub Coordinator
+title: We’re recruiting for a Hub Coordinator
 icon: job
 ---
 Would you like to join an exciting new project, helping community led housing groups in Kent achieve their aims and aspirations?  The Kent Community Housing Hub is looking for someone with a passion for housing, who can work collaboratively and creatively to inspire and support communities in Kent who are seeking to develop the type of housing they want and need. This will be through some direct group work and by providing operational and administrative support to the Hub.

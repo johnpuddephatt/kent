@@ -2,6 +2,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const markdownIt = require('markdown-it')
 var mila = require('markdown-it-link-attributes')
+const pluginBetterSlug = require("@borisschapira/eleventy-plugin-better-slug");
 
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
@@ -12,6 +13,7 @@ module.exports = function (config) {
     // Plugins
     config.addPlugin(pluginRss)
     config.addPlugin(pluginNavigation)
+    config.addPlugin(pluginBetterSlug);
 
     // Filters
     Object.keys(filters).forEach((filterName) => {
