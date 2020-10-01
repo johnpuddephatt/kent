@@ -72,7 +72,7 @@
 
     {% for checkBox in options %}
         <div class="multiple-choice">
-            <input id="{{name | slug }}-{{checkBox | slug }}" type="checkbox" name="{{checkBox | slug }}" value="{{checkBox}}" />
+            <input id="{{name | slug }}-{{checkBox | slug }}" type="checkbox" name="{{name | slug }}[]" value="{{checkBox}}" />
             <label for="{{name | slug}}-{{checkBox | slug }}">{{checkBox}}</label>
         </div>
     {% endfor %}
