@@ -114,3 +114,16 @@ legend {
     font-weight: $font-weight-normal;
   }
 }
+
+fieldset:not(.multiple-choice-options) {
+  padding: $spacing $spacing 1.5 * $spacing;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-bottom: $spacing;
+  margin-left: -$spacing;
+  margin-right: -$spacing;
+
+  h2:first-child {
+    margin-top: 0;
+  }
+}

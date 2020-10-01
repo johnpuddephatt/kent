@@ -10,190 +10,201 @@ icon: start
 
 <form name="kent_health_check" netlify>
 
-  <h2>Lead contact</h2>
+  <fieldset>
+    <h2>Lead contact</h2>
 
-  {{ forms.input('contact_name', label='Full name', hint='Applicant name including title') }}
-  {{ forms.textarea('contact_address', label='Address', hint='Applicant address including postcode') }}
-  {{ forms.input('contact_phone_mobile', label='Phone number (mobile)') }}
-  {{ forms.input('contact_phone_landline', label='Phone number (landline)') }}
-  {{ forms.input('contact_email', type="email", label='Email address', required="true") }}
-  {{ forms.boolean('contact_permission', label='Are you happy for us to contact you to follow up on your responses above?') }}
-  {{ forms.boolean('mailing_list', label='Do you want to be added to our mailing list?') }}
+    {{ forms.input('contact_name', label='Full name', hint='Applicant name including title') }}
+    {{ forms.textarea('contact_address', label='Address', hint='Applicant address including postcode') }}
+    {{ forms.input('contact_phone_mobile', label='Phone number (mobile)') }}
+    {{ forms.input('contact_phone_landline', label='Phone number (landline)') }}
+    {{ forms.input('contact_email', type="email", label='Email address', required="true") }}
+    {{ forms.boolean('contact_permission', label='Are you happy for us to contact you to follow up on your responses above?') }}
+    {{ forms.boolean('mailing_list', label='Do you want to be added to our mailing list?') }}
+  </fieldset>
+  <fieldset>
+    <h2>Group information</h2>
+    <h3>Basic information</h3>
 
-  <h2>Group information</h2>
-  <h3>Basic information</h3>
+    {{ forms.input('group_name', label='Full name of group') }}
+    {{ forms.select(
+      'number_of_members',
+      label='Number of members',
+      options=['Just me','2 to 5 people','6 to 10 people','11 to 20 people','20+ people']
+      )
+    }}
+    {{ forms.input('group_founding_date', label='When was it set up?') }}
+    {{ forms.select(
+      'type_of_group',
+      label='Type of group',
+      options=['Not formally constituted yet','Co-operative for the benefit of its members','Community Benefit Society','Company Limited by Guarantee','Do not know yet and would like your help with this','Other (please specify)']
+      )
+    }}
+    {{ forms.input('further_information_about_group_type', label='Additional information about type of group') }}
+    {{ forms.textarea('registered_address', label='Registered address of group') }}
+    {{ forms.boolean('bank_account_setup', label='Does the group already have a bank account?') }}
+    {{ forms.input('website', label='Website') }}
+    {{ forms.textarea('social_media_accounts', label='Social media accounts', hint='If the group has any social media accounts please provide links to them.') }}
 
-  {{ forms.input('group_name', label='Full name of group') }}
-  {{ forms.select(
-    'number_of_members',
-    label='Number of members',
-    options=['Just me','2 to 5 people','6 to 10 people','11 to 20 people','20+ people']
-    )
-  }}
-  {{ forms.input('group_founding_date', label='When was it set up?') }}
-  {{ forms.select(
-    'type_of_group',
-    label='Type of group',
-    options=['Not formally constituted yet','Co-operative for the benefit of its members','Community Benefit Society','Company Limited by Guarantee','Do not know yet and would like your help with this','Other (please specify)']
-    )
-  }}
-  {{ forms.input('further_information_about_group_type', label='Additional information about type of group') }}
-  {{ forms.textarea('registered_address', label='Registered address of group') }}
-  {{ forms.boolean('bank_account_setup', label='Does the group already have a bank account?') }}
-  {{ forms.input('website', label='Website') }}
-  {{ forms.textarea('social_media_accounts', label='Social media accounts', hint='If the group has any social media accounts please provide links to them.') }}
+    <h3>Your setup</h3>
+    {{ forms.textarea('skills', label='Relevant skills within your group', hint='Provide a brief description of the background, skills and abilities of any individuals in the group that will be of benefit to your scheme.') }}
+    {{ forms.textarea('time', label='Time currently being spent working on scheme', hint='How much time do you estimate your group is spending working towards the objectives of this scheme?') }}
+    {{ forms.textarea('democratic_process', label='How are (or will) you engaging your local community?', hint='How have you, or how will you, engage other members of the local community in terms of a) giving their support to and/or b) being actively involved in your scheme?') }}
+  </fieldset>
+  <fieldset>
+    <h2>Scheme basics</h2>
+    {{ forms.input('scheme_name', label='Name of scheme', hint='If known at this time') }}
+    {{ forms.input('scheme_location', label='Location of scheme', hint='State town or village if known') }}
+    {{ forms.input('scheme_local_authority', label='Local authority', hint='The local authority responsible for the location and surrounding area(s)') }}
+  </fieldset>
+  <fieldset>
+    <h2>Scheme location</h2>
+    {{ forms.select(
+      'land_acquisition',
+      label='How do you hope to acquire land or a building for your scheme?',
+      options=[ 'Purchase on the open market',
+                'Use property already owned by our group',
+                'Lease/rent',
+                'Seek asset transfer',
+                'Buy at a discount',
+                'Section 106 deal with the local authority',
+                'Do not know yet and would like your help with this',
+                'Other (please specify)'
+              ]
+      )
+    }}
+    {{ forms.input('further_information_about_acquisition', label='Further information about acquisition plans') }}
 
-  <h3>Your setup</h3>
-  {{ forms.textarea('skills', label='Relevant skills within your group', hint='Provide a brief description of the background, skills and abilities of any individuals in the group that will be of benefit to your scheme.') }}
-  {{ forms.textarea('time', label='Time currently being spent working on scheme', hint='How much time do you estimate your group is spending working towards the objectives of this scheme?') }}
-  {{ forms.textarea('democratic_process', label='How are (or will) you engaging your local community?', hint='How have you, or how will you, engage other members of the local community in terms of a) giving their support to and/or b) being actively involved in your scheme?') }}
+    {{ forms.select(
+      'site_location',
+      label='Have you already identified a specific site within the location for your scheme?',
+      options=[ 'We would like help finding a site/building',
+                'We have not looked at any sites/buildings',
+                'We have looked but have not selected a site/building',
+                'We have found a site we like but have not acquired it',
+                'We have acquired a site',
+                'We have acquired a site and outline planning permission',
+                'We have acquired a site and full planning permission',
+                'Other (please specify)'
+              ]
+      )
+    }}
+    {{ forms.input('further_information_about_site_location', label='Further information about site location') }}
+  </fieldset>
+  <fieldset>
+    <h2>Awareness and support</h2>
+    {{ forms.textarea('local_authority_officers', label='Are any local authority officers aware of your scheme?', hint='List any officers aware of your scheme and state whether they support or oppose your plans') }}
+    {{ forms.textarea('local_councillors', label='Are any local councillors aware of your scheme?', hint='List any councillors aware of your scheme and state whether they support or oppose your plans') }}
+    {{ forms.textarea('other_local_authority_awareness', label='Are any other people in your local authority aware of your scheme?', hint='List anyone working for your local authority who is aware of your scheme, their role and whether they support or oppose your plans') }}
+  </fieldset>
+  <fieldset>
+    <h2>Local housing needs and potential scheme benefits</h2>
+    <p>We would like to understand why you want to deliver your proposed scheme so please provide a brief description of:</p>
+    <ul>
+      <li>the local community as a whole</li>
+      <li>the housing situation or housing shortage within that local community</li>
+      <li>the residents your scheme will serve</li>
+      <li>any economic difficulties that exist within the residents your scheme will serve</li>
+      <li>anything else you think we should be aware of</li>
+    </ul>
 
-  <h2>Scheme information</h2>
+    {{ forms.textarea('local_community_profile', label='Local community profile') }}
+    {{ forms.textarea('local_housing_situation', label='Local housing situation') }}
+    {{ forms.textarea('scheme_beneficiaries', label='Scheme beneficiaries') }}
+    {{ forms.textarea('scheme_beneficiary_economic_situation', label='Economic situation of beneficiaries') }}
+    {{ forms.textarea('other_useful_information', label='Other useful information') }}
+  </fieldset>
+  <fieldset>
+    <h2>Scheme housing details</h2>
+    {{ forms.checkbox(
+      'scheme_type',
+      label='What type of housing scheme will it be?',
+      hint='<a target="_blank" href="https://www.communityledhomes.org.uk/types-of-community-led-housing">See a description of each type</a> (opens in new window)',
+      options=[ 'Co-housing',
+                'Self-help',
+                'Self-build',
+                'Custom build',
+                'Community land trust',
+                'Mutual home ownership',
+                'Co-operative',
+                'Do not know yet and would like your help with this',
+                'Other (please specify)'
+              ]
+      )
+    }}
+    {{ forms.input('further_information_about_scheme', label='Further information about the type of scheme') }}
 
-  <h3>Basic information</h3>
-  {{ forms.input('scheme_name', label='Name of scheme', hint='If known at this time') }}
-  {{ forms.input('scheme_location', label='Location of scheme', hint='State town or village if known') }}
-  {{ forms.input('scheme_local_authority', label='Local authority', hint='The local authority responsible for the location and surrounding area(s)') }}
+    {{ forms.textarea('description_of_housing', label='Provide a brief description of the type of housing you think is needed', hint='Details to include: a) if they are flats, bungalows or terraced/semi-detached/detached properties b) if they are for a specific sector of the local community c) if it is a new build or a refurbishment / repurposing of an existing building d) whether or not they are to be constructed and will run in an environmentally friendly and sustainable way') }}
+    {{ forms.checkbox(
+      'type_of_tenure',
+      label='Have you decided what kind of tenure you want to provide?',
+      options=[ 'Do not know yet and would like your help with this',
+                'Owner occupier',
+                'Shared ownership',
+                'Social rent',
+                'Private rented',
+                'Affordable rent (e.g. 80% of market rate)',
+                'Other (please specify)'
+              ]
+      )
+    }}
+    {{ forms.input('further_information_about_tenure_type', label='Further information about tenure type') }}
 
-  {{ forms.select(
-    'land_acquisition',
-    label='How do you hope to acquire land or a building for your scheme?',
-    options=[ 'Purchase on the open market',
-              'Use property already owned by our group',
-              'Lease/rent',
-              'Seek asset transfer',
-              'Buy at a discount',
-              'Section 106 deal with the local authority',
-              'Do not know yet and would like your help with this',
-              'Other (please specify)'
-            ]
-    )
-  }}
-  {{ forms.input('further_information_about_acquisition', label='Further information about acquisition plans') }}
+    {{ forms.select(
+      'management_arrangements',
+      label='Intended management arrangements',
+      options=['We want to manage the homes ourselves','We want a third party to manage the homes, such as a housing association','Do not know and we would like your help with this','Other (please specify)']
+      )
+    }}
 
-  {{ forms.select(
-    'site_location',
-    label='Have you already identified a specific site within the location for your scheme?',
-    options=[ 'We would like help finding a site/building',
-              'We have not looked at any sites/buildings',
-              'We have looked but have not selected a site/building',
-              'We have found a site we like but have not acquired it',
-              'We have acquired a site',
-              'We have acquired a site and outline planning permission',
-              'We have acquired a site and full planning permission',
-              'Other (please specify)'
-            ]
-    )
-  }}
-  {{ forms.input('further_information_about_site_location', label='Further information about site location') }}
+    {{ forms.boolean('business_plan_and_budget', label='Have you started or completed a business plan and outline budget?') }}
+    {{ forms.textarea('nearby_groups', label='Are you aware of any nearby groups proposing community-led housing?', hint='If you are aware of any groups, please list them and state if you are intending to collaborate with them.') }}
+  </fieldset>
+  <fieldset>
+    <h2>Scheme timescales</h2>
+    {{ forms.input('scheme_start_date', label='When would you like to start your build or refurbishment?', hint='If your scheme has already started, provide the approximate start date.') }}
+    {{ forms.input('scheme_end_date', label='When are you aiming to finish your build or refurbishment?') }}
+  </fieldset>
+  <fieldset>
+    <h2>Scheme partners</h2>
 
+    {{ forms.checkbox(
+      'partners',
+      label='Are you working with (or planning to work with) any of the following types of partners?',
+      options=[ 'A large, volume housebuilder',
+                'A small or medium sized builder',
+                'Registered provider (housing association)',
+                'An existing community organisation',
+                'A local authority',
+                'We want to do it alone',
+                'Do not know yet and would like your help with this',
+                'Other (please specify)'
+              ]
+      )
+    }}
 
-  <h3>Awareness and support</h3>
-  {{ forms.textarea('local_authority_officers', label='Are any local authority officers aware of your scheme?', hint='List any officers aware of your scheme and state whether they support or oppose your plans') }}
-  {{ forms.textarea('local_councillors', label='Are any local councillors aware of your scheme?', hint='List any councillors aware of your scheme and state whether they support or oppose your plans') }}
-  {{ forms.textarea('other_local_authority_awareness', label='Are any other people in your local authority aware of your scheme?', hint='List anyone working for your local authority who is aware of your scheme, their role and whether they support or oppose your plans') }}
+    {{ forms.input('further_information_about_partners', label='Further information about partners') }}
+  </fieldset>
+  <fieldset>
+    <h2>Scheme finance</h2>
+    {{ forms.checkbox(
+      'finance',
+      label='How are you financing the scheme?',
+      options=[ 'We have all the money we need',
+                'We have some of the money we need',
+                'We intend to raise money through loans',
+                'We intend to raise money through grants',
+                'We intend to raise money through donations',
+                'Do not know yet and would like your help with this'
+              ]
+      )
+    }}
+  </fieldset>
 
-  <h3>Local housing needs and potential scheme benefits</h3>
-  <p>We would like to understand why you want to deliver your proposed scheme so please provide a brief description of:</p>
-  <ul>
-    <li>the local community as a whole</li>
-    <li>the housing situation or housing shortage within that local community</li>
-    <li>the residents your scheme will serve</li>
-    <li>any economic difficulties that exist within the residents your scheme will serve</li>
-    <li>anything else you think we should be aware of</li>
-  </ul>
-
-  {{ forms.textarea('local_community_profile', label='Local community profile') }}
-  {{ forms.textarea('local_housing_situation', label='Local housing situation') }}
-  {{ forms.textarea('scheme_beneficiaries', label='Scheme beneficiaries') }}
-  {{ forms.textarea('scheme_beneficiary_economic_situation', label='Economic situation of beneficiaries') }}
-  {{ forms.textarea('other_useful_information', label='Other useful information') }}
-
-  <h3>Housing details</h3>
-  {{ forms.checkbox(
-    'scheme_type',
-    label='What type of housing scheme will it be?',
-    hint='<a target="_blank" href="https://www.communityledhomes.org.uk/types-of-community-led-housing">See a description of each type</a> (opens in new window)',
-    options=[ 'Co-housing',
-              'Self-help',
-              'Self-build',
-              'Custom build',
-              'Community land trust',
-              'Mutual home ownership',
-              'Co-operative',
-              'Do not know yet and would like your help with this',
-              'Other (please specify)'
-            ]
-    )
-  }}
-  {{ forms.input('further_information_about_scheme', label='Further information about the type of scheme') }}
-
-  {{ forms.textarea('description_of_housing', label='Provide a brief description of the type of housing you think is needed', hint='Details to include: a) if they are flats, bungalows or terraced/semi-detached/detached properties b) if they are for a specific sector of the local community c) if it is a new build or a refurbishment / repurposing of an existing building d) whether or not they are to be constructed and will run in an environmentally friendly and sustainable way') }}
-  {{ forms.checkbox(
-    'type_of_tenure',
-    label='Have you decided what kind of tenure you want to provide?',
-    options=[ 'Do not know yet and would like your help with this',
-              'Owner occupier',
-              'Shared ownership',
-              'Social rent',
-              'Private rented',
-              'Affordable rent (e.g. 80% of market rate)',
-              'Other (please specify)'
-            ]
-    )
-  }}
-  {{ forms.input('further_information_about_tenure_type', label='Further information about tenure type') }}
-
-  {{ forms.select(
-    'management_arrangements',
-    label='Intended management arrangements',
-    options=['We want to manage the homes ourselves','We want a third party to manage the homes, such as a housing association','Do not know and we would like your help with this','Other (please specify)']
-    )
-  }}
-
-  {{ forms.boolean('business_plan_and_budget', label='Have you started or completed a business plan and outline budget?') }}
-  {{ forms.textarea('nearby_groups', label='Are you aware of any nearby groups proposing community-led housing?', hint='If you are aware of any groups, please list them and state if you are intending to collaborate with them.') }}
-
-  <h2>Scheme timescales</h2>
-  {{ forms.input('scheme_start_date', label='When would you like to start your build or refurbishment?', hint='If your scheme has already started, provide the approximate start date.') }}
-  {{ forms.input('scheme_end_date', label='When are you aiming to finish your build or refurbishment?') }}
-
-  <h2>Scheme partners</h2>
-
-  {{ forms.checkbox(
-    'partners',
-    label='Are you working with (or planning to work with) any of the following types of partners?',
-    options=[ 'A large, volume housebuilder',
-              'A small or medium sized builder',
-              'Registered provider (housing association)',
-              'An existing community organisation',
-              'A local authority',
-              'We want to do it alone',
-              'Do not know yet and would like your help with this',
-              'Other (please specify)'
-            ]
-    )
-  }}
-
-  {{ forms.input('further_information_about_partners', label='Further information about partners') }}
-
-  <h2>Finance</h2>
-  {{ forms.checkbox(
-    'finance',
-    label='How are you financing the scheme?',
-    options=[ 'We have all the money we need',
-              'We have some of the money we need',
-              'We intend to raise money through loans',
-              'We intend to raise money through grants',
-              'We intend to raise money through donations',
-              'Do not know yet and would like your help with this'
-            ]
-    )
-  }}
-
-  <h2>Additional information</h2>
-  {{ forms.textarea('additional_information', label='Is there any further information you want to provide?') }}
-  {{ forms.textarea('additional_help', label='Is there anything else you would like us to help you with?') }}
+  <fieldset>
+    <h2>Additional information</h2>
+    {{ forms.textarea('additional_information', label='Is there any further information you want to provide?') }}
+    {{ forms.textarea('additional_help', label='Is there anything else you would like us to help you with?') }}
+  </fieldset>
 
   <button class="button" type="submit">Submit</button>
 
