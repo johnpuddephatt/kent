@@ -67,8 +67,8 @@
 <fieldset>
    <legend>
         {{label}}
-        {% if hint %}<p class="form-hint">{{ hint | safe }}</p>{% endif %}
    </legend>
+   {% if hint %}<p class="form-hint">{{ hint | safe }}</p>{% endif %}
 
     {% for checkBox in options %}
         <div class="multiple-choice">
