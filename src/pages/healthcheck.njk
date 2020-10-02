@@ -13,10 +13,8 @@ icon: start
   <fieldset>
     <h2>Lead contact</h2>
 
-    {{ forms.input('contact_name', label='Full name', hint='Applicant name including title') }}
-    {{ forms.textarea('contact_address', label='Address', hint='Applicant address including postcode') }}
-    {{ forms.input('contact_phone_mobile', label='Phone number (mobile)') }}
-    {{ forms.input('contact_phone_landline', label='Phone number (landline)') }}
+    {{ forms.input('contact_name', label='Full name' }}
+    {{ forms.input('contact_phone', label='Phone number') }}
     {{ forms.input('contact_email', type="email", label='Email address', required="true") }}
     {{ forms.boolean('contact_permission', label='Are you happy for us to contact you to follow up on your responses above?') }}
     {{ forms.boolean('mailing_list', label='Do you want to be added to our mailing list?') }}
@@ -100,8 +98,8 @@ icon: start
     <h2>Local housing needs and potential scheme benefits</h2>
     <p>We would like to understand why you want to deliver your proposed scheme so please provide a brief description of:</p>
     <ul>
-      <li>the local community as a whole</li>
-      <li>the housing situation or housing shortage within that local community</li>
+      <li>the local community as a whole (if relevant)</li>
+      <li>the housing situation or housing shortage within that local community (if relevant)</li>
       <li>the residents your scheme will serve</li>
       <li>any economic difficulties that exist within the residents your scheme will serve</li>
       <li>anything else you think we should be aware of</li>
