@@ -1,0 +1,37 @@
+# config.yml
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+site_url: https://kentcommunityhousinghub.org
+media_folder: '/src/uploads'
+logo_url: https://www.zerowasteleeds.org.uk/assets/images/meta.jpg
+public_folder: "/uploads"
+collections:
+  - name: 'posts'
+    label: 'Blog'
+    folder: 'src/posts'
+    preview_path: posts/{{slug}}
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    summary: "{{title}}  ({{day}}.{{month}}.{{year}})"
+    editor:
+      preview: true
+    fields:
+      - { name: 'layout', widget: 'hidden', default: 'layouts/post.njk' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime', dateFormat: 'Do MMM YYYY', timeFormat: false }
+      - { label: 'Image', name: 'icon', widget: 'select', options: ['environment','house','houses','job'] }
+      - { label: 'Description', name: 'body', widget: 'markdown'}
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'src/pages'
+    preview_path: pages/{{slug}}
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { name: 'layout', widget: 'hidden', default: 'layouts/page.njk' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Introduction', name: 'intro', widget: 'text' }
+      - { label: 'Description', name: 'body', widget: 'markdown'}

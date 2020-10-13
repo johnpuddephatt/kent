@@ -65,6 +65,7 @@ module.exports = function (config) {
     config.addPassthroughCopy('src/assets/images')
     config.addPassthroughCopy('src/assets/fonts')
     config.addPassthroughCopy('src/uploads');
+    config.addPassthroughCopy('src/admin');
 
     // Deep-Merge
     config.setDataDeepMerge(true)
