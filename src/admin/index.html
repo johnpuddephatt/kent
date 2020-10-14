@@ -16,16 +16,17 @@
         var image = entry.getIn(['data', 'image']);
         // var bg = this.props.getAsset(image);
 
-        return h('div', {className: "page-content"},
-          h('div', {className: "container container__narrow"},
-            h('h1', {className: "page-title"}, entry.getIn(['data', 'title']))
+        return h('div', {className: "main"},
+          h('div', {className: "post__header"},
+            h('div', {className: "post__header__content"},
+              h('img', {className: "icon", src: `/assets/icons/blog--${entry.getIn(['data', 'icon'])}.svg`)
+            ),
           ),
-          h('div', {"className": "post-image-container"},
-            h('div', {className: "container container__narrow"},
-              h('img', {className: "post__image", src: image }),
-            )
-          ),
-          h('div', {className: "page-body container container__narrow"}, this.props.widgetFor('body'))
+          h('div', {className: "container page__content"},
+            h('h1', {className: "page__title"}, entry.getIn(['data', 'title'])),
+            h('time', {className: "page__date"}, entry.getIn(['data', 'date'])),
+            h('div', this.props.widgetFor('body'))
+          )
         );
       }
     });
@@ -33,11 +34,8 @@
     var PagePreview = createClass({
       render: function() {
         var entry = this.props.entry;
-        // var image = entry.getIn(['data', 'image']);
-        // var bg = this.props.getAsset(image);
 
         return h('div', {className: "main"},
-
           h('div', {className: "page__header"},
             h('div', {className: "container container--narrow"},
               h('div', {className: "page__header__image"}
