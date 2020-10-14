@@ -190,6 +190,5 @@ collections:
     fields:
       - { name: 'layout', widget: 'hidden', default: 'layouts/post.njk' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime', dateFormat: 'Do MMM YYYY', timeFormat: false }
       - { label: 'Image', name: 'icon', widget: 'select', options: ['environment','house','houses','job'] }
       - { label: 'Body', name: 'body', widget: 'markdown'}
