@@ -38,8 +38,10 @@ collections:
   - name: site
     label: Site
     delete: false
+    editor:
+      preview: false
     files:
-      - file: src/data/meta.json
+      - file: src/data/meta.md
         label: Meta
         name: meta
         fields:
@@ -84,5 +86,109 @@ collections:
             name: instagram
             required: false
             widget: string
+            hint: ""
+            default: ""
+      - file: src/data/contact.json
+        label: Contact details
+        name: contact
+        fields:
+          - label: Contact name
+            name: name
+            required: false
+            widget: string
+            hint: ""
+            default: ""
+          - label: Contact email
+            name: email
+            required: false
+            widget: string
+            hint: ""
+            default: ""
+          - label: Phone (main)
+            name: phone_main
+            required: false
+            widget: string
+            hint: ""
+            default: ""
+          - label: Phone (mobile)
+            name: phone_mobile
+            required: false
+            widget: string
+            hint: ""
+            default: ""
+          - label: Address
+            name: address
+            required: false
+            widget: text
+            hint: ""
+            default: ""
+      - file: src/data/home.json
+        label: Home
+        name: home
+        fields:
+          - label: Hero – title
+            name: hero_title
+            required: true
+            widget: string
+            hint: ""
+            default: ""
+          - label: Hero – description
+            name: hero_description
+            required: true
+            widget: text
+            hint: ""
+            default: ""
+          - label: Hero – button text
+            name: hero_button_text
+            required: false
+            widget: string
+            hint: ""
+            default: ""
+          - label: Hero – button link
+            name: hero_button_link
+            required: true
+            widget: string
+            hint: Can be an absolute or relative link
+            default: ""
+          - label: What We Do – title
+            name: whatwedo_title
+            required: true
+            widget: string
+            hint: ""
+            default: ""
+          - label: What We Do – description
+            name: whatwedo_description
+            required: true
+            widget: text
+            hint: ""
+            default: ""
+          - label: Community-led Housing – title
+            name: clh_title
+            required: true
+            widget: string
+            hint: ""
+            default: ""
+          - label: Community-led Housing – description
+            name: clh_description
+            required: true
+            widget: text
+            hint: ""
+            default: ""
+          - label: News – title
+            name: news_title
+            required: true
+            widget: string
+            hint: ""
+            default: ""
+          - label: Signup – title
+            name: signup_title
+            required: true
+            widget: string
+            hint: ""
+            default: ""
+          - label: Signup – description
+            name: signup_description
+            required: true
+            widget: text
             hint: ""
             default: ""
