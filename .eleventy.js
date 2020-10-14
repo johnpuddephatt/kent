@@ -64,6 +64,7 @@ module.exports = function (config) {
     config.addPassthroughCopy('src/site.webmanifest')
     config.addPassthroughCopy('src/assets/images')
     config.addPassthroughCopy('src/assets/fonts')
+    config.addPassthroughCopy('src/assets/icons')
     config.addPassthroughCopy('src/uploads');
     config.addPassthroughCopy('src/admin');
 

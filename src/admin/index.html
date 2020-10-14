@@ -33,7 +33,7 @@
     var PagePreview = createClass({
       render: function() {
         var entry = this.props.entry;
-        var image = entry.getIn(['data', 'image']);
+        // var image = entry.getIn(['data', 'image']);
         // var bg = this.props.getAsset(image);
 
         return h('div', {className: "main"},
@@ -41,7 +41,7 @@
           h('div', {className: "page__header"},
             h('div', {className: "container container--narrow"},
               h('div', {className: "page__header__image"}
-                // IMAGE
+                h('img', {src: `/assets/icons/${entry.getIn(['data', 'icon'])}.svg`)
               ),
               h('div', {className: "page__header__text"},
                 h('h1', {className: "page__title"}, entry.getIn(['data', 'title'])),
