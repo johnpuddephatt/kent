@@ -177,7 +177,7 @@ collections:
       - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
       - { label: 'Introduction', name: 'intro', widget: 'text' }
       - { label: 'Image', name: 'icon', widget: 'select', options: ['join','about','start','resources'] }
-      - { label: 'Description', name: 'body', widget: 'markdown'}
+      - { label: 'Body', name: 'body', widget: 'markdown'}
   - name: 'posts'
     label: 'Blog'
     folder: 'src/posts'
@@ -192,4 +192,4 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime', dateFormat: 'Do MMM YYYY', timeFormat: false }
       - { label: 'Image', name: 'icon', widget: 'select', options: ['environment','house','houses','job'] }
-      - { label: 'Description', name: 'body', widget: 'markdown'}
+      - { label: 'Body', name: 'body', widget: 'markdown'}
