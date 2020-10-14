@@ -13,9 +13,6 @@
     var PostPreview = createClass({
       render: function() {
         var entry = this.props.entry;
-        var image = entry.getIn(['data', 'image']);
-        // var bg = this.props.getAsset(image);
-
         return h('div', {className: "main"},
           h('div', {className: "post__header"},
             h('div', {className: "post__header__content"},
@@ -24,7 +21,6 @@
           ),
           h('div', {className: "container page__content"},
             h('h1', {className: "page__title"}, entry.getIn(['data', 'title'])),
-            h('time', {className: "page__date"}, entry.getIn(['data', 'date'])),
             h('div', this.props.widgetFor('body'))
           )
         );
