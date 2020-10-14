@@ -30,8 +30,13 @@
       margin-left: auto;
       margin-right: auto;
       padding: 3 * $spacing 5 * $spacing;
+
       @include mq(xl) {
         padding: 2 * $spacing 3 * $spacing;
+      }
+
+      .inverted {
+        filter: invert(1);
       }
     }
   }
