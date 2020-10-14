@@ -30,8 +30,33 @@
       }
     });
 
+    var PagePreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        var image = entry.getIn(['data', 'image']);
+        // var bg = this.props.getAsset(image);
+
+        return h('div', {className: "main"},
+
+          h('div', {className: "page__header-content"},
+            h('div', {className: "container container--narrow"},
+              h('div', {className: "page__header__image"}
+                // IMAGE
+              ),
+              h('div', {className: "page__header__text"},
+                h('h1', {className: "page__title"}, entry.getIn(['data', 'title'])),
+                h('p', {className: "page__subtitle"}, entry.getIn(['data', 'subtitle'])),
+                h('div', {className: "page__intro"}, entry.getIn(['data', 'intro']))
+              )
+            )
+          ),
+          h('div', {className: "container page__content"}, this.props.widgetFor('body'))
+        );
+      }
+    });
+
     CMS.registerPreviewTemplate("posts", PostPreview);
-    CMS.registerPreviewTemplate("pages", PostPreview);
+    CMS.registerPreviewTemplate("pages", PagePreview);
 
     CMS.registerPreviewStyle("/assets/styles/main.css");
 
