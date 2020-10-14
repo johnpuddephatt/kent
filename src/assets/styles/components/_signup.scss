@@ -2,6 +2,9 @@
   fieldset {
     margin-top: $spacing;
     margin-bottom: $spacing/2;
+    box-shadow: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   input[type="text"] {
