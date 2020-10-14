@@ -16,7 +16,9 @@
         return h('div', {className: "main"},
           h('div', {className: "post__header"},
             h('div', {className: "post__header__content"},
-              h('img', {className: "icon", src: `/assets/icons/blog--${entry.getIn(['data', 'icon'])}.svg`})
+              h('div', {className: "icon"},
+                h('img', {className: "inverted", src: `/assets/icons/blog--${entry.getIn(['data', 'icon'])}.svg`})
+              )
             )
           ),
           h('div', {className: "container page__content"},
