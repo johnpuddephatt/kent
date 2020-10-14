@@ -23,7 +23,6 @@
           ),
           h('div', {className: "container page__content"},
             h('h1', {className: "page__title"}, entry.getIn(['data', 'title'])),
-            h('p', {className: "page__date"}, entry.getIn(['data', 'date'])),
             h('div', {className: "foo"}, this.props.widgetFor('body'))
           )
         );
