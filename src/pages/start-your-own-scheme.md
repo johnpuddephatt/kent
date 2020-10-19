@@ -40,6 +40,6 @@ We’d like everyone involved with a project to feel as informed and equipped as
 
 ## How do I get started with my own community led housing scheme?
 
-<!-- If you’d like to find out more about using our services, please tell us more about your group by completing the health check form below. You may be at the very start of your project, so don’t worry if you can’t complete it all - just fill out what you can and we’ll be in touch. -->
+If you’d like to find out more about using our services, please tell us more about your group by completing the health check form below. You may be at the very start of your project, so don’t worry if you can’t complete it all - just fill out what you can and we’ll be in touch.
 
-We’ll shortly be launching our health check form, which will assess where you’re up to and help us understand how we can help. 
+[Complete our online Healthcheck](/healthcheck-questionnaire/)
