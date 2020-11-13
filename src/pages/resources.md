@@ -12,7 +12,7 @@ icon: resources
 eleventyNavigation:
   key: Resources
 ---
-1. ## National Organisations
+## National Organisations
 
 ### [Community Led Homes](https://www.communityledhomes.org.uk/)
 
