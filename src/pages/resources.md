@@ -48,9 +48,7 @@ Helping people in housing need to build their own homes.
 
 ### [Locality Community Led Housing Toolkit](https://mycommunity.org.uk/community-led-housing-toolkit-1-getting-your-community-led-housing-project-up-and-running)
 
-
-
-**[Groundwork](https://www.groundwork.org.uk/)**
+## [Groundwork](https://www.groundwork.org.uk/)
 
 A federation of charities mobilising practical community action on poverty and the environment across the UK
 
