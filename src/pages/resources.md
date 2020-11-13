@@ -7,7 +7,7 @@ intro: >
   become a mainstream housing option.
 
 
-  There are also a significant number of local initiatives doing fantastic work across Kent.
+  There are also a number of local initiatives doing fantastic work across Kent.
 icon: resources
 eleventyNavigation:
   key: Resources
