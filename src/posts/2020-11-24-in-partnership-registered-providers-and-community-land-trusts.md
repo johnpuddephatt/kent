@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.njk
+layout: post
 title: "In Partnership: Registered Providers and Community Land Trusts"
 icon: houses
 ---

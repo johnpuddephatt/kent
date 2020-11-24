@@ -42,4 +42,4 @@ We’d like everyone involved with a project to feel as informed and equipped as
 
 If you’d like to find out more about using our services, please tell us more about your group by completing the health check form below. You may be at the very start of your project, so don’t worry if you can’t complete it all - just fill out what you can and we’ll be in touch.
 
-[Complete our online Healthcheck](/healthcheck-questionnaire/)
+[Complete our online Healthcheck](https://kentcommunityhousinghub.org/healthcheck-questionnaire/)
