@@ -2,8 +2,10 @@
 layout: page
 title: Start your own scheme
 subtitle: Everything you need to transform where you live
-intro: |
-  The housing market is failing to meet the needs of our communities, especially in terms of affordability and the types of housing. The good news is people across the country are taking matters into their own hands - and you can too.
+intro: >
+  The housing market is failing to meet the needs of our communities, especially
+  in terms of affordability and the types of housing. The good news is people
+  across the country are taking matters into their own hands - and you can too.
 icon: start
 eleventyNavigation:
   key: Start your own scheme
@@ -28,7 +30,7 @@ We’ll help you establish your group and figure out what kind of community led 
 
 ### Technical advice
 
-We’re always on hand to provide technical advice for groups. We can do this through one of our enabling programmes - working closely with your group throughout the entire process - or on a consultancy basis for specific parts of your project you need help with.
+We’re always on hand to provide technical advice for groups through our associates of experienced and qualified Technical Advisors. We can do this through one of our enabling programmes - working closely with your group throughout the entire process - or on a consultancy basis for specific parts of your project you need help with.
 
 ### Raising awareness
 
@@ -36,7 +38,7 @@ It’s important for us to build awareness and support for community led housing
 
 ### Training and networking
 
-We’d like everyone involved with a project to feel as informed and equipped as possible, so we offer skills training across key areas. We also hold regular networking events for groups to get together, share insights and learn from each other.
+We’d like everyone involved with a project to feel as informed and equipped as possible, so we offer skills training across key areas. We also hold regular networking events for groups to get together, share insights and learn from each other.  To be kept up to date, please subscribe to the website.  
 
 ## How do I get started with my own community led housing scheme?
 
