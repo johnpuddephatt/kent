@@ -1,11 +1,11 @@
 {
-  "title": "Kent Community Housing Hub",
-  "description": "Laying the foundations for better homes.",
-  "url": "https://kentcommunityhousinghub.org",
-  "image": "/assets/images/meta.jpg",
-  "lang": "en",
-  "locale": "en_uk",
   "facebook": "https://www.facebook.com/CLHKent",
-  "twitter": "",
-  "instagram": ""
+  "lang": "en",
+  "url": "https://kentcommunityhousinghub.org",
+  "instagram": "",
+  "twitter": "https://twitter.com/hub_kent",
+  "title": "Kent Community Housing Hub",
+  "locale": "en_uk",
+  "image": "/assets/images/meta.jpg",
+  "description": "Laying the foundations for better homes."
 }
