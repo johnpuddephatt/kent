@@ -14,11 +14,6 @@
     &__content {
       margin: 0 auto;
       max-width: map-get($breakpoints, md);
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
     }
 
     .icon {
@@ -43,6 +38,13 @@
       .inverted {
         filter: invert(1);
       }
+    }
+  }
+
+  &__content {
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 }
