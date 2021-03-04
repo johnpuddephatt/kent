@@ -1,6 +1,6 @@
 ---
 layout: page
-title: our events
+title: Our events
 subtitle: Browse and book tickets for our upcoming online events
 intro: .... and check back here regularly for updates!
 icon: start
