@@ -167,7 +167,7 @@ collections:
   - name: 'pages'
     label: 'Pages'
     folder: 'src/pages'
-    preview_path: '{{slug}}/index.html'
+    preview_path: '{{ slug }}/index.html'
     create: true
     editor:
       preview: true
