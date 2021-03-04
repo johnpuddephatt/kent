@@ -8,7 +8,7 @@ intro: >
   across the country are taking matters into their own hands - and you can too.
 icon: start
 eleventyNavigation:
-  key: Start your own scheme
+  key: Start a scheme
 ---
 ## What does the community-led housing process look like?
 
