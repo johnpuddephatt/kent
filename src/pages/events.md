@@ -5,7 +5,7 @@ subtitle: Browse and book tickets for our upcoming online events
 intro: .... and check back here regularly for updates!
 icon: start
 eleventyNavigation:
-  key: Events
+  key: our events
 ---
 Click the link to book: [Community Led Housing in Rural Areas Tickets, Fri 19 Mar 2021 at 12:30 | Eventbrite](https://www.eventbrite.co.uk/e/community-led-housing-in-rural-areas-tickets-143302919891)
 
