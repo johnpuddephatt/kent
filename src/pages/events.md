@@ -7,7 +7,7 @@ icon: start
 ---
 <!--StartFragment-->
 
-[Community Led Housing in Rural Areas Tickets, Fri 19 Mar 2021 at 12:30 | Eventbrite](https://www.eventbrite.co.uk/e/community-led-housing-in-rural-areas-tickets-143302919891)
+Click the link to book: [Community Led Housing in Rural Areas Tickets, Fri 19 Mar 2021 at 12:30 | Eventbrite](https://www.eventbrite.co.uk/e/community-led-housing-in-rural-areas-tickets-143302919891)
 
 <!--EndFragment-->
 
