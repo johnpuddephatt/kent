@@ -167,7 +167,7 @@ collections:
   - name: 'pages'
     label: 'Pages'
     folder: 'src/pages'
-    preview_path: {{slug}}/index.html
+    preview_path: '{{slug}}/index.html'
     create: true
     editor:
       preview: true
@@ -178,6 +178,11 @@ collections:
       - { label: 'Introduction', name: 'intro', widget: 'text' }
       - { label: 'Image', name: 'icon', widget: 'select', options: ['join','about','start','resources'] }
       - { label: 'Body', name: 'body', widget: 'markdown'}
+      - label: 'Navigation'
+        name: 'eleventyNavigation'
+        widget: 'object'
+        fields:
+          - { label: 'Label', name: 'key', widget: 'string', required: false}
   - name: 'posts'
     label: 'Blog'
     folder: 'src/posts'
