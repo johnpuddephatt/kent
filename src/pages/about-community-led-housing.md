@@ -9,7 +9,7 @@ intro: >
   owned by the community however they want.
 icon: about
 eleventyNavigation:
-  key: About CLH
+  key: About community led housing
 ---
 ## What are the benefits?
 
