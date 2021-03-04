@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Events
-subtitle: Browse and book tickets for our upcoming online events!
-intro: Our online events aim to educate, inspire and enlighten.
+subtitle: Browse and book tickets for our upcoming online events
+intro: .... and check back regularly for updates!
 icon: start
 ---
 <!--StartFragment-->
