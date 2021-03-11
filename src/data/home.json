@@ -2,7 +2,7 @@
   "hero_button_link": "/join-us/",
   "news_title": "Latest News.",
   "signup_title": "Join us.",
-  "hero_title": "<!-- Global site tag (gtag.js) - Google Analytics --> <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-7BFYP60PVS\"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config', 'G-7BFYP60PVS'); </script>Laying the foundations for better homes.",
+  "hero_title": "Laying the foundations for better homes.",
   "hero_button_text": "get involved",
   "signup_description": "Want to keep updated with all community led housing news? Subscribe to our mailing list and we’ll keep you in the loop with all the latest events, training and information.",
   "whatwedo_title": "We empower people in Kent to bring their own housing schemes to life.",
