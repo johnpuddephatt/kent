@@ -1,17 +1,13 @@
 {
-    "hero_title": "Laying the foundations for better homes.",
-    "hero_description": "Welcome to the Kent Community Housing Hub. We help people across our region develop their own housing projects, create closer-knit communities and build sustainable, affordable homes they really want to live in.",
-    "hero_button_text": "get involved",
-    "hero_button_link": "/join-us/",
-
-    "whatwedo_title": "We empower people in Kent to bring their own housing schemes to life.",
-    "whatwedo_description": "Across towns, cities, villages and hamlets, we equip people with the resources they need to create the high-quality homes they want to see.\n\nOur vision for community led housing gives local residents the power to create their own housing schemes, decide how they should be developed and have complete control over how they are run. Through community land trusts, co-housing and co-operatives, we’re changing how housing works for everyone - one home at a time.",
-
-    "clh_title": "Community-led housing: a new way of doing things.",
-    "clh_description": "Independently owned, managed or steered by local residents, community led housing brings communities together to overcome the unique housing challenges they face.",
-
-    "news_title": "Latest News.",
-
-    "signup_title": "Join us.",
-    "signup_description": "Want to keep updated with all community led housing news? Subscribe to our mailing list and we’ll keep you in the loop with all the latest events, training and information."
+  "hero_button_link": "/join-us/",
+  "news_title": "Latest News.",
+  "signup_title": "Join us.",
+  "hero_title": "<!-- Global site tag (gtag.js) - Google Analytics --> <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-7BFYP60PVS\"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config', 'G-7BFYP60PVS'); </script>Laying the foundations for better homes.",
+  "hero_button_text": "get involved",
+  "signup_description": "Want to keep updated with all community led housing news? Subscribe to our mailing list and we’ll keep you in the loop with all the latest events, training and information.",
+  "whatwedo_title": "We empower people in Kent to bring their own housing schemes to life.",
+  "hero_description": "Welcome to the Kent Community Housing Hub. We help people across our region develop their own housing projects, create closer-knit communities and build sustainable, affordable homes they really want to live in.",
+  "clh_title": "Community-led housing: a new way of doing things.",
+  "whatwedo_description": "Across towns, cities, villages and hamlets, we equip people with the resources they need to create the high-quality homes they want to see.\n\nOur vision for community led housing gives local residents the power to create their own housing schemes, decide how they should be developed and have complete control over how they are run. Through community land trusts, co-housing and co-operatives, we’re changing how housing works for everyone - one home at a time.",
+  "clh_description": "Independently owned, managed or steered by local residents, community led housing brings communities together to overcome the unique housing challenges they face."
 }
