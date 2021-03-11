@@ -1,10 +1,6 @@
 ---
 layout: page
-title: <!-- Global site tag (gtag.js) - Google Analytics --> <script async
-  src="https://www.googletagmanager.com/gtag/js?id=G-7BFYP60PVS"></script>
-  <script>   window.dataLayer = window.dataLayer || [];   function
-  gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config',
-  'G-7BFYP60PVS'); </script>Join us
+title: Join us
 subtitle: Everyone deserves a home they love.
 intro: >
   We connect people and groups in Kent involved in community led housing and
