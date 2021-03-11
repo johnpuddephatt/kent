@@ -1,10 +1,6 @@
 ---
 layout: page
-title: <!-- Global site tag (gtag.js) - Google Analytics --> <script async
-  src="https://www.googletagmanager.com/gtag/js?id=G-7BFYP60PVS"></script>
-  <script>   window.dataLayer = window.dataLayer || [];   function
-  gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config',
-  'G-7BFYP60PVS'); </script>About community-led housing
+title: " community-led housing"
 subtitle: A people-powered solution to the housing crisis
 intro: >
   Community led housing offers a people-powered solution to the housing crisis,
