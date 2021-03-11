@@ -1,10 +1,6 @@
 ---
 layout: page
-title: <!-- Global site tag (gtag.js) - Google Analytics --> <script async
-  src="https://www.googletagmanager.com/gtag/js?id=G-7BFYP60PVS"></script>
-  <script>   window.dataLayer = window.dataLayer || [];   function
-  gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config',
-  'G-7BFYP60PVS'); </script>Start your own scheme
+title: Start your own scheme
 subtitle: Everything you need to transform where you live
 intro: >
   The housing market is failing to meet the needs of our communities, especially
