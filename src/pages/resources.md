@@ -1,6 +1,10 @@
 ---
 layout: page
-title: Resources
+title: <!-- Global site tag (gtag.js) - Google Analytics --> <script async
+  src="https://www.googletagmanager.com/gtag/js?id=G-7BFYP60PVS"></script>
+  <script>   window.dataLayer = window.dataLayer || [];   function
+  gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config',
+  'G-7BFYP60PVS'); </script>Resources
 subtitle: Information to help you get started
 intro: >
   There are many organisations in the UK working to help community led housing
