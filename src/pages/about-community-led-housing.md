@@ -11,13 +11,23 @@ icon: about
 eleventyNavigation:
   key: About community led housing
 ---
+```javascript
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PN24WDD');</script>
+<!-- End Google Tag Manager -->
+```
+
 ## What are the benefits?
 
 Community led housing provides:
 
-- Innovative projects based on open and meaningful community participation, delivered with the cooperation and consent of residents
-- The chance for a community group or organisation to own, manage or steward homes however they decide
-- Much-needed housing developments with tangible, legally-protected benefits for either the local community, a specific group of people, or both.
+* Innovative projects based on open and meaningful community participation, delivered with the cooperation and consent of residents
+* The chance for a community group or organisation to own, manage or steward homes however they decide
+* Much-needed housing developments with tangible, legally-protected benefits for either the local community, a specific group of people, or both.
 
 [Start your own scheme](/start-your-own-scheme/)
 
@@ -26,7 +36,6 @@ Community led housing provides:
 Kent has a large demand for new housing. This is driven by an exceptionally high level of second home ownership, our close proximity to London, our relatively small urban centres and significant areas of deprivation, especially within some coastal communities.
 
 Across urban and rural areas alike, people face a wide range of housing issues, such as a grave shortage of homes, general affordability, rising private rents and limited housing provision for younger and older people. Kent also has twice the national average of homes sitting empty, making local housing needs even more difficult to meet.
-
 
 ## A real alternative to the private rental market
 
