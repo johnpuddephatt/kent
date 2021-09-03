@@ -54,7 +54,7 @@ A federation of charities mobilising practical community action on poverty and t
 
 ## Local Councils
 
-### [Dover District Council – Community Led Housing](https://www.dover.gov.uk/Housing/Community-Housing/Community-Housing.aspx)
+### [Dover District Council – Community Led Housing](https://www.dover.gov.uk/Housing/Housing-Development/Community-Housing/Community-Housing.aspx)
 
 Awarded funding via the Government's Community Housing Fund, Dover District council is helping community led housing in the district. They’re keen to ensure any communities interested in building affordable housing for locals have the knowledge and support they need.
 
