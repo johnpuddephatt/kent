@@ -65,3 +65,7 @@ Working in partnership with neighbouring authorities in Dover and Canterbury, Th
 ### [Folkestone and Hythe Council – Community Led Housing](https://folkestone-hythe.gov.uk/communityledhousing)
 
 Also teaming up with Dover, Thanet and Canterbury, Folkestone and Hythe Council are using government funding to support communities in delivering new homes through training, information and access to funds.
+
+### [Canterbury City Council - Community Led Housing](https://www.canterbury.gov.uk/housing/community-led-housing/)
+
+Also awarded funding via the Government's Community Housing Fund, Canterbury City Council are helping groups deliver community led housing including through access to funds.[](https://www.canterbury.gov.uk/housing/community-led-housing/)
