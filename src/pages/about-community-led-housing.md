@@ -1,27 +1,26 @@
 ---
 layout: page
-title: " community-led housing"
+title: ' community-led housing'
 subtitle: A people-powered solution to the housing crisis
 intro: >
-  Community led housing offers a people-powered solution to the housing crisis,
-  a way for people and communities to come together and solve their own unique
-  housing challenges. It results in high quality, affordable homes, managed or
-  owned by the community however they want.
+    Community led housing offers a people-powered solution to the housing crisis,
+    a way for people and communities to come together and solve their own unique
+    housing challenges. It results in high quality, affordable homes, managed or
+    owned by the community however they want.
 icon: about
 eleventyNavigation:
-  key: About community led housing
+    key: About community led housing
 ---
-
 
 ## What are the benefits?
 
 Community led housing provides:
 
-* Innovative projects based on open and meaningful community participation, delivered with the cooperation and consent of residents
-* The chance for a community group or organisation to own, manage or steward homes however they decide
-* Much-needed housing developments with tangible, legally-protected benefits for either the local community, a specific group of people, or both.
+-   Innovative projects based on open and meaningful community participation, delivered with the cooperation and consent of residents
+-   The chance for a community group or organisation to own, manage or steward homes however they decide
+-   Much-needed housing developments with tangible, legally-protected benefits for either the local community, a specific group of people, or both.
 
-[Start your own scheme](/start-your-own-scheme/)
+[Starting a housing scheme](/start-your-own-scheme/)
 
 ## Bringing people and communities together across our region
 
@@ -37,4 +36,4 @@ Together, this creates high levels of housing insecurity, which in turn has an e
 
 ## Looking ahead to a brighter tomorrow
 
-As part of the Community Led Homes Enabler Hub Grants Programme, we’re in a unique position to help motivated groups start tackling all these issues head on. By encouraging projects for community led homes and empowering people to see them through, we’re doing everything we can to fight inequality and take our region to a place of greater inclusivity, stability and fairness.
+As part of a network of community housing hubs across the country, we’re in a unique position to help motivated groups start tackling all these issues head on. By encouraging projects for community led homes and empowering people to see them through, we’re doing everything we can to fight inequality and take our region to a place of greater inclusivity, stability and fairness.

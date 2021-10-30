@@ -3,15 +3,13 @@ layout: page
 title: Resources
 subtitle: Information to help you get started
 intro: >
-  There are many organisations in the UK working to help community led housing
-  become a mainstream housing option.
-
-
-  There are also a number of local initiatives doing fantastic work across Kent.
+    There are many organisations in the UK working to help community led housing
+    become a mainstream housing option.
 icon: resources
 eleventyNavigation:
-  key: Resources
+    key: Resources
 ---
+
 ## National Organisations
 
 ### [Community Led Homes](https://www.communityledhomes.org.uk/)
@@ -42,7 +40,7 @@ For people interested in communal living in the UK.
 
 Involves groups of people, often in housing need, bringing empty properties back into use.
 
-### [Community Self Build Agency](https://www.communityselfbuildagency.org.uk/)
+### [Community Self Build Agency](https://www.spatialagency.net/database/why/professional/community.self.build.agency)
 
 Helping people in housing need to build their own homes.
 
@@ -52,7 +50,11 @@ Helping people in housing need to build their own homes.
 
 A federation of charities mobilising practical community action on poverty and the environment across the UK
 
+Check out [Brighton and Hove CLT](https://bhclt.org.uk/) who are supporting some fantastic projects in our neighbouring county, and have a useful resources page
+
 ## Local Councils
+
+There are currently four local authorities running community led housing initiatives in Kent.
 
 ### [Dover District Council – Community Led Housing](https://www.dover.gov.uk/Housing/Housing-Development/Community-Housing/Community-Housing.aspx)
 
@@ -60,7 +62,7 @@ Awarded funding via the Government's Community Housing Fund, Dover District coun
 
 ### [Thanet District Council – Community Led Housing](https://www.thanet.gov.uk/info-pages/community-led-housing/)
 
-Working in partnership with neighbouring authorities in Dover and Canterbury, Thanet  District Council are helping local communities make sensible, informed decisions about what needs to be built and where.
+Working in partnership with neighbouring authorities in Dover and Canterbury, Thanet District Council are helping local communities make sensible, informed decisions about what needs to be built and where.
 
 ### [Folkestone and Hythe Council – Community Led Housing](https://folkestone-hythe.gov.uk/communityledhousing)
 
