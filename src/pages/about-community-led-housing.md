@@ -20,7 +20,7 @@ Community led housing provides:
 -   The chance for a community group or organisation to own, manage or steward homes however they decide
 -   Much-needed housing developments with tangible, legally-protected benefits for either the local community, a specific group of people, or both.
 
-[Starting a housing scheme](/start-your-own-scheme/)
+[Start a housing scheme](/start-a-scheme/)
 
 ## Bringing people and communities together across our region
 
