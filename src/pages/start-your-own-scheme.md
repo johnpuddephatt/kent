@@ -3,15 +3,15 @@ layout: page
 title: Start a scheme
 subtitle: Everything you need to transform where you live
 intro: >
-    The housing market is failing to meet the needs of our communities, especially
-    in terms of affordability and the types of housing. The good news is people
-    across the country are taking matters into their own hands - and you could too.
+  The housing market is failing to meet the needs of our communities, especially
+  in terms of affordability and the types of housing. The good news is people
+  across the country are taking matters into their own hands - and you could
+  too.
 icon: 1
-eleventyNavigation:
-    key: Start a scheme
 image: /assets/images/asset3.jpg
+eleventyNavigation:
+  key: Start a scheme
 ---
-
 ## What does the community-led housing process look like?
 
 Every project is unique. Some people want to deliver affordable homes for their local area, others are looking to live with like-minded people in a more sustainable way. Some projects are all about bringing empty homes or commercial properties back into use. Whatever the purpose, there are usually five main stages to every community led housing scheme.
@@ -23,6 +23,10 @@ Every project is unique. Some people want to deliver affordable homes for their 
 5. **Live Stage** - Managing and maintaining homes once people have moved in
 
 For more details on what’s involved with getting a typical project off the ground, we recommend heading over to [the official Community Led Homes website](https://www.communityledhomes.org.uk/how-do-it).
+
+![](/uploads/87936130_129251455277498_5872426397758128128_n.jpg)
+
+
 
 ## What kind of support can I expect from Kent Community Housing?
 
