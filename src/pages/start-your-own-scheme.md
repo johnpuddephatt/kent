@@ -6,9 +6,10 @@ intro: >
     The housing market is failing to meet the needs of our communities, especially
     in terms of affordability and the types of housing. The good news is people
     across the country are taking matters into their own hands - and you could too.
-icon: start
+icon: 1
 eleventyNavigation:
     key: Start a scheme
+image: /assets/images/asset3.jpg
 ---
 
 ## What does the community-led housing process look like?

@@ -1,0 +1,61 @@
+.quote {
+    background-color: $brand-green;
+    display: flex;
+    flex-direction: column;
+
+    @include orientation(landscape) {
+        flex-direction: row;
+
+        &-text,
+        &-image {
+            flex: none;
+            width: 50%;
+        }
+    }
+
+    &-image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        blockquote {
+            font-size: ms(3);
+            @include mq(2xl) {
+                font-size: ms(4);
+            }
+            color: $brand-purple;
+            font-weight: 900;
+            line-height: $heading-line-height;
+            max-width: 20em;
+            margin-top: $spacing/2;
+            margin-bottom: $spacing/2;
+
+            @include orientation(portrait) {
+                margin-left: $spacing/2;
+                margin-right: $spacing/2;
+            }
+
+            &::before,
+            &::after {
+                font-size: ms(12);
+                color: $brand-linen;
+                display: block;
+                line-height: 0;
+                margin-top: 0.5em;
+                margin-bottom: 0.15em;
+                content: open-quote;
+            }
+
+            &::after {
+                content: close-quote;
+            }
+        }
+    }
+}

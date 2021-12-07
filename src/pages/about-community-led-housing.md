@@ -7,7 +7,8 @@ intro: >
     a way for people and communities to come together and solve their own unique
     housing challenges. It results in high quality, affordable homes, managed or
     owned by the community however they want.
-icon: about
+icon: 1
+image: /assets/images/asset2.jpg
 eleventyNavigation:
     key: About community led housing
 ---

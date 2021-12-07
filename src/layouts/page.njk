@@ -5,8 +5,9 @@ layout: base
 
   <div class="page__header">
     <div class="container container--narrow">
-      <div class="page__header__image">
-        {% icon icon, "", 500, 500 %}
+      <div class="page__header__image page__header__image--clipped page__header__image--clipped-{{ icon }}">
+        {% icon icon, "", 1600, 1110 %}
+        {% srcset image, "", null, 1600, 1280 %}
       </div>
       <div class="page__header__text">
         <h1 class="page__title">{{ title }}</h1>

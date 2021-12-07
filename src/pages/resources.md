@@ -5,7 +5,8 @@ subtitle: Information to help you get started
 intro: >
     There are many organisations in the UK working to help community led housing
     become a mainstream housing option.
-icon: resources
+icon: 5
+image: /assets/images/seaside.jpeg
 eleventyNavigation:
     key: Resources
 ---

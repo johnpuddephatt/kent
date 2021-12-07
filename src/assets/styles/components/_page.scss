@@ -1,117 +1,159 @@
 .page {
-  &__header {
-    background-color: $brand-mint;
-    padding-top: 2 * $spacing;
-    padding-bottom: $spacing;
+    &__header {
+        background-color: $brand-mint;
+        padding-top: 2 * $spacing;
+        padding-bottom: $spacing;
 
-    .container {
-      @include orientation(landscape) {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-      }
+        .container {
+            @include orientation(landscape) {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+        }
+
+        &__image {
+            display: block;
+            width: 100%;
+            @include orientation(portrait) {
+                width: 66.7%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            flex: 1;
+            height: auto;
+
+            @extend %textured;
+
+            svg,
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            &--clipped {
+                position: relative;
+
+                &-1 {
+                    img {
+                        clip-path: url(#shape-one);
+                    }
+                }
+                &-2 {
+                    img {
+                        clip-path: url(#shape-two);
+                    }
+                }
+                &-3 {
+                    img {
+                        clip-path: url(#shape-three);
+                    }
+                }
+                &-4 {
+                    img {
+                        clip-path: url(#shape-four);
+                    }
+                }
+                &-5 {
+                    img {
+                        clip-path: url(#shape-five);
+                    }
+                }
+
+                svg {
+                    z-index: 9;
+                    position: absolute;
+                    width: 112.5%;
+                    top: 0;
+                    left: -10%;
+                    right: -2.5%;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &__text {
+            flex: 0 0 50%;
+            padding-right: $spacing/2;
+            @include orientation(portrait) {
+                padding-right: 0;
+                padding-top: $spacing;
+            }
+        }
     }
 
-    &__image {
-      display: block;
-      width: 100%;
-      @include orientation(portrait) {
-        width: 66.7%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      flex: 1;
-      height: auto;
-
-      @extend %textured;
-
-      svg,
-      img {
-        width: 100%;
-        height: auto;
-      }
+    &__title {
+        margin-bottom: $spacing/4;
+        font-size: ms(4);
     }
 
-    &__text {
-      flex: 0 0 60%;
-      padding-right: $spacing/2;
-      @include orientation(portrait) {
-        padding-right: 0;
-        padding-top: $spacing;
-      }
-    }
-  }
-
-  &__title {
-    margin-bottom: $spacing/4;
-    font-size: ms(4);
-  }
-
-  &__subtitle {
-    font-size: ms(2);
-    color: $brand-color-primary;
-    font-weight: $font-weight-black;
-    line-height: $heading-line-height;
-  }
-
-  &__intro {
-    font-size: ms(0);
-    max-width: $max-line-length;
-  }
-
-  &__content {
-    margin: 2 * $spacing auto 3 * $spacing;
-    max-width: map-get($breakpoints, md);
-
-    h2 {
-      margin-top: 1.5 * $spacing;
-      margin-bottom: $spacing;
+    &__subtitle {
+        font-size: ms(2);
+        color: $brand-color-primary;
+        font-weight: $font-weight-black;
+        line-height: $heading-line-height;
     }
 
-    h3 {
-      margin-top: $spacing;
-      margin-bottom: $spacing/2;
-      font-weight: 700;
-      font-size: ms(0);
-    }
-    ul,ol {
-      margin: $spacing 0;
-    }
-    li {
-      list-style-type: none;
-      position: relative;
-    }
-    ul li {
-      margin-left: $spacing/2;
-      padding-left: $spacing;
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: $spacing/6;
-        width: $spacing/2;
-        height: $spacing/2;
-        border-radius: 9999px;
-        background-color: $brand-color-secondary;
-      }
+    &__intro {
+        font-size: ms(0);
+        max-width: $max-line-length;
     }
 
-    ol li {
-      margin-left: 1.5 * $spacing;
-      list-style-type: decimal;
-    }
-    li + li {
-      margin-top: $spacing/4;
-    }
-    a {
-      text-decoration: none;
-      transition: border 500ms ease;
-      border-bottom: 0.2em solid transparentize($brand-color-secondary,0.5);
+    &__content {
+        margin: 2 * $spacing auto 3 * $spacing;
+        max-width: map-get($breakpoints, md);
 
-      &:hover {
-        border-bottom-color: $brand-color-secondary;
-      }
+        h2 {
+            margin-top: 1.5 * $spacing;
+            margin-bottom: $spacing;
+        }
+
+        h3 {
+            margin-top: $spacing;
+            margin-bottom: $spacing/2;
+            font-weight: 700;
+            font-size: ms(0);
+        }
+        ul,
+        ol {
+            margin: $spacing 0;
+        }
+        li {
+            list-style-type: none;
+            position: relative;
+        }
+        ul li {
+            margin-left: $spacing/2;
+            padding-left: $spacing;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: $spacing/6;
+                width: $spacing/2;
+                height: $spacing/2;
+                border-radius: 9999px;
+                background-color: $brand-color-secondary;
+            }
+        }
+
+        ol li {
+            margin-left: 1.5 * $spacing;
+            list-style-type: decimal;
+        }
+        li + li {
+            margin-top: $spacing/4;
+        }
+        a {
+            text-decoration: none;
+            transition: border 500ms ease;
+            border-bottom: 0.2em solid
+                transparentize($brand-color-secondary, 0.5);
+
+            &:hover {
+                border-bottom-color: $brand-color-secondary;
+            }
+        }
     }
-  }
 }
