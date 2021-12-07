@@ -1,25 +1,24 @@
 ---
 layout: page
-title: ' community-led housing'
+title: Community-led housing
 subtitle: A people-powered solution to the housing crisis
 intro: >
-    Community led housing offers a people-powered solution to the housing crisis,
-    a way for people and communities to come together and solve their own unique
-    housing challenges. It results in high quality, affordable homes, managed or
-    owned by the community however they want.
-icon: 1
+  Community led housing offers a people-powered solution to the housing crisis,
+  a way for people and communities to come together and solve their own unique
+  housing challenges. It results in high quality, affordable homes, managed or
+  owned by the community however they want.
+icon: "1"
 image: /assets/images/asset2.jpg
 eleventyNavigation:
-    key: About community led housing
+  key: About community led housing
 ---
-
 ## What are the benefits?
 
 Community led housing provides:
 
--   Innovative projects based on open and meaningful community participation, delivered with the cooperation and consent of residents
--   The chance for a community group or organisation to own, manage or steward homes however they decide
--   Much-needed housing developments with tangible, legally-protected benefits for either the local community, a specific group of people, or both.
+* Innovative projects based on open and meaningful community participation, delivered with the cooperation and consent of residents
+* The chance for a community group or organisation to own, manage or steward homes however they decide
+* Much-needed housing developments with tangible, legally-protected benefits for either the local community, a specific group of people, or both.
 
 [Start a housing scheme](/start-a-scheme/)
 
@@ -28,6 +27,8 @@ Community led housing provides:
 Kent has a large demand for new housing. This is driven by an exceptionally high level of second home ownership, our close proximity to London, our relatively small urban centres and significant areas of deprivation, especially within some coastal communities.
 
 Across urban and rural areas alike, people face a wide range of housing issues, such as a grave shortage of homes, general affordability, rising private rents and limited housing provision for younger and older people. Kent also has twice the national average of homes sitting empty, making local housing needs even more difficult to meet.
+
+![](/uploads/dji_0016.jpg)
 
 ## A real alternative to the private rental market
 
