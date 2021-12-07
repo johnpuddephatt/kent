@@ -1,16 +1,16 @@
 ---
 layout: page
-title: ' community-led housing'
+title: Community-led housing
 subtitle: A people-powered solution to the housing crisis
 intro: >
-    Community led housing offers a people-powered solution to the housing crisis,
-    a way for people and communities to come together and solve their own unique
-    housing challenges. It results in high quality, affordable homes, managed or
-    owned by the community however they want.
-icon: 1
+  Community led housing offers a people-powered solution to the housing crisis,
+  a way for people and communities to come together and solve their own unique
+  housing challenges. It results in high quality, affordable homes, managed or
+  owned by the community however they want.
+icon: "1"
 image: /assets/images/asset2.jpg
 eleventyNavigation:
-    key: About community led housing
+  key: About community led housing
 ---
 
 ## What are the benefits?
