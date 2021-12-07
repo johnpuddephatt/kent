@@ -103,6 +103,11 @@
         margin: 2 * $spacing auto 3 * $spacing;
         max-width: map-get($breakpoints, md);
 
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
         h2 {
             margin-top: 1.5 * $spacing;
             margin-bottom: $spacing;

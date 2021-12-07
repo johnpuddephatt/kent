@@ -18,7 +18,7 @@ module.exports = function (config) {
 
     config.addPlugin(pluginSrcsetImg, {
         srcsetWidths: [320, 540, 900, 1024],
-        autoselector: '.post-content img',
+        autoselector: '.page__content img',
         createCaptions: true
     })
 
