@@ -1,0 +1,28 @@
+{% for group in collections.groups %}
+<div class="group-item">
+<div class="group-item--image clip-{{ (loop.index0 % 5) + 1 }}">
+<img src="{{ group.data.image }}" />
+</div>
+<div class="group-item--text">
+<h3>{{ group.data.title }}</h3>
+{{ group.templateContent | safe }}
+
+<div class="group-item--contact">
+{% if group.data.link %}
+<a target="_blank" class="button" href="{{group.data.link}}">Visit website</a>
+{% endif %}
+{% if group.data.facebook %}
+<a class="group-item--social-icon" aria-label="Facebook account for {{ group.data.title}}" target="_blank" href="{{ group.data.facebook }}">
+{% icon "facebook" %}
+</a>
+{% endif %}
+
+{% if group.data.twitter %}
+<a class="group-item--social-icon" aria-label="Twitter account for {{ group.data.title}}" target="_blank" href="{{ group.data.twitter }}">
+{% icon "twitter" %}
+</a>
+{% endif %}
+</div>
+</div>
+</div>
+{% endfor %}

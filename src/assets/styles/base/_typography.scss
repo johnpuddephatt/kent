@@ -1,10 +1,10 @@
 html {
-  font-size: $font-size-root /  map-get($modularscale, ratio);
+    font-size: math.div($font-size-root, map-get($modularscale, ratio));
     @include mq(lg) {
-      font-size: $font-size-root;
+        font-size: $font-size-root;
     }
     @include mq(xl) {
-      font-size: $font-size-root * map-get($modularscale, ratio);
+        font-size: $font-size-root * map-get($modularscale, ratio);
     }
 }
 
@@ -29,16 +29,16 @@ p {
 }
 
 a {
-  color: $brand-purple;
+    color: $brand-purple;
 }
 
 .read-more {
-  margin-top: auto;
-  padding-top: $spacing/4;
+    margin-top: auto;
+    padding-top: math.div($spacing, 4);
 
-  &::after {
-    content: '>';
-    display: inline-block;
-    margin-left: $spacing/8;
-  }
+    &::after {
+        content: '>';
+        display: inline-block;
+        margin-left: math.div($spacing, 8);
+    }
 }

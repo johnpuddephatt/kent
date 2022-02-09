@@ -1,121 +1,119 @@
 .whatwedo {
-  background-color: $brand-mint;
-  padding: 4 * $spacing 0;
+    background-color: $brand-mint;
+    padding: 4 * $spacing 0;
 
-  .container {
-    &--top {
-      @include orientation(landscape) {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-      }
+    .container {
+        &--top {
+            @include orientation(landscape) {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+        }
+
+        &--middle {
+            padding: $spacing 0;
+            @include orientation(landscape) {
+                padding: 2 * $spacing 0;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        &--bottom {
+            text-align: center;
+        }
     }
 
-    &--middle {
-      padding: $spacing 0;
-      @include orientation(landscape) {
-        padding: 2 * $spacing 0;
-        display: flex;
-        flex-direction: row;
-      }
+    &__image {
+        display: block;
+        width: 100%;
+        @include orientation(portrait) {
+            width: 66.7%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        flex: 1;
+        height: auto;
+
+        @extend %textured;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
     }
 
-    &--bottom {
-      text-align: center;
-    }
-  }
-
-  &__image {
-    display: block;
-    width: 100%;
-    @include orientation(portrait) {
-      width: 66.7%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    flex: 1;
-    height: auto;
-
-    @extend %textured;
-
-    svg {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  &__text {
-    flex: 0 0 50%;
-    padding-left: $spacing;
-    @include orientation(portrait) {
-      padding-left: 0;
-      padding-bottom: $spacing;
-    }
-  }
-
-  &__heading {
-    margin-bottom: $spacing/2;
-    font-size: ms(3);
-  }
-
-  &__description {
-    margin-bottom: $spacing/2;
-    font-size: ms(0);
-  }
-
-  &__item {
-    padding: 0 $spacing;
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 33.33%;
-
-    @include orientation(portrait) {
-      padding: $spacing/2 $spacing;
-    }
-
-    + .whatwedo__item {
-      border-left: 0.2rem solid $brand-color-secondary;
-      @include orientation(portrait) {
-        border-left: none;
-
-      }
-    }
-
-    .whatwedo__icon {
-      border-radius: 9999px;
-      background-color: #fff;
-      padding: $spacing/3;
-      align-self: center;
-      margin-right: $spacing/2;
-    }
-
-    .icon {
-      width: $spacing;
-      height: auto;
-      position: relative;
-      color: $brand-color-secondary;
-
-      // &::before {
-      //   content: '';
-      //   display: block;
-      //   position: absolute;
-      //   border-radius: 9999px;
-      //   background-color: #fff;
-      //   top: 0;
-      //   left: 0;
-      //   right: 0;
-      //   bottom: 0;
-      // }
-
+    &__text {
+        flex: 0 0 50%;
+        padding-left: $spacing;
+        @include orientation(portrait) {
+            padding-left: 0;
+            padding-bottom: $spacing;
+        }
     }
 
     &__heading {
-      margin-bottom: $spacing/4;
-      font-size: ms(1);
+        margin-bottom: math.div($spacing, 2);
+        font-size: ms(3);
     }
 
-    p {
-      font-size: ms(-1);
+    &__description {
+        margin-bottom: math.div($spacing, 2);
+        font-size: ms(0);
     }
-  }
+
+    &__item {
+        padding: 0 $spacing;
+        display: flex;
+        flex-direction: row;
+        flex: 0 1 33.33%;
+
+        @include orientation(portrait) {
+            padding: math.div($spacing, 2) $spacing;
+        }
+
+        + .whatwedo__item {
+            border-left: 0.2rem solid $brand-color-secondary;
+            @include orientation(portrait) {
+                border-left: none;
+            }
+        }
+
+        .whatwedo__icon {
+            border-radius: 9999px;
+            background-color: #fff;
+            padding: math.div($spacing, 3);
+            align-self: center;
+            margin-right: math.div($spacing, 2);
+        }
+
+        .icon {
+            width: $spacing;
+            height: auto;
+            position: relative;
+            color: $brand-color-secondary;
+
+            // &::before {
+            //   content: '';
+            //   display: block;
+            //   position: absolute;
+            //   border-radius: 9999px;
+            //   background-color: #fff;
+            //   top: 0;
+            //   left: 0;
+            //   right: 0;
+            //   bottom: 0;
+            // }
+        }
+
+        &__heading {
+            margin-bottom: math.div($spacing, 4);
+            font-size: ms(1);
+        }
+
+        p {
+            font-size: ms(-1);
+        }
+    }
 }

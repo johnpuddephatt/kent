@@ -1,19 +1,19 @@
 .signup-form {
-  fieldset {
-    margin-top: $spacing;
-    margin-bottom: $spacing/2;
-    box-shadow: none;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+    fieldset {
+        margin-top: $spacing;
+        margin-bottom: math.div($spacing, 2);
+        box-shadow: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-  input[type="text"] {
-    border: none;
-    font-weight: $font-weight-normal;
-    -webkit-font-smoothing: antialiased;
-    border-bottom: 0.2em solid $brand-color-primary;
-    width: 20em;
-    outline-offset: -0.2em;
-    padding: $spacing/4;
-  }
+    input[type='text'] {
+        border: none;
+        font-weight: $font-weight-normal;
+        -webkit-font-smoothing: antialiased;
+        border-bottom: 0.2em solid $brand-color-primary;
+        width: 20em;
+        outline-offset: -0.2em;
+        padding: math.div($spacing, 4);
+    }
 }

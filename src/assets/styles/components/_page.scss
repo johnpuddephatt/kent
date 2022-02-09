@@ -74,7 +74,7 @@
 
         &__text {
             flex: 0 0 50%;
-            padding-right: $spacing/2;
+            padding-right: math.div($spacing, 2);
             @include orientation(portrait) {
                 padding-right: 0;
                 padding-top: $spacing;
@@ -83,7 +83,7 @@
     }
 
     &__title {
-        margin-bottom: $spacing/4;
+        margin-bottom: math.div($spacing, 4);
         font-size: ms(4);
     }
 
@@ -115,7 +115,7 @@
 
         h3 {
             margin-top: $spacing;
-            margin-bottom: $spacing/2;
+            margin-bottom: math.div($spacing, 2);
             font-weight: 700;
             font-size: ms(0);
         }
@@ -128,16 +128,16 @@
             position: relative;
         }
         ul li {
-            margin-left: $spacing/2;
+            margin-left: math.div($spacing, 2);
             padding-left: $spacing;
             &::before {
                 content: '';
                 display: block;
                 position: absolute;
                 left: 0;
-                top: $spacing/6;
-                width: $spacing/2;
-                height: $spacing/2;
+                top: math.div($spacing, 6);
+                width: math.div($spacing, 2);
+                height: math.div($spacing, 2);
                 border-radius: 9999px;
                 background-color: $brand-color-secondary;
             }
@@ -148,7 +148,7 @@
             list-style-type: decimal;
         }
         li + li {
-            margin-top: $spacing/4;
+            margin-top: math.div($spacing, 4);
         }
         a {
             text-decoration: none;

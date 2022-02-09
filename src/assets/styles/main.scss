@@ -1,11 +1,10 @@
 // ---------------------------------
 // MASTER STYLESHEET INDEX
 // ---------------------------------
-
 //--------------------
 // UTILITIES
 //--------------------
-
+@use 'sass:math';
 @import 'utils/functions';
 @import 'utils/variables';
 @import 'utils/mixins';
@@ -40,6 +39,7 @@
 @import 'components/page';
 @import 'components/post';
 @import 'components/signup';
+@import 'components/groups';
 
 @import 'pages/home-hero';
 @import 'pages/home-whatwedo';

@@ -164,6 +164,30 @@ collections:
                   widget: text
                   hint: ''
                   default: ''
+    - name: 'groups'
+      label: 'Groups'
+      folder: 'src/groups'
+      create: true
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Link', name: 'link', widget: 'string' }
+          - { label: 'Facebook', name: 'facebook', widget: 'string' }
+          - { label: 'Twitter', name: 'twitter', widget: 'string' }
+    - name: 'events'
+      label: 'Events'
+      folder: 'src/events'
+      create: true
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Date', name: 'date', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Link', name: 'link', widget: 'string' }
     - name: 'pages'
       label: 'Pages'
       folder: 'src/pages'

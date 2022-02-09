@@ -1,55 +1,55 @@
 .signup {
-  padding-top: 2 * $spacing;
-  padding-bottom: 2 * $spacing;
+    padding-top: 2 * $spacing;
+    padding-bottom: 2 * $spacing;
 
-  .container {
-    @include orientation(landscape) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+    .container {
+        @include orientation(landscape) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
     }
-  }
 
-  &__image {
-    display: block;
-    width: 100%;
-    margin-right: -2 * $spacing;
-    @include orientation(portrait) {
-      width: 65%;
-      margin-left: auto;
-      margin-right: auto;
+    &__image {
+        display: block;
+        width: 100%;
+        margin-right: -2 * $spacing;
+        @include orientation(portrait) {
+            width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        flex: 0 0 50%;
+        height: auto;
+
+        @extend %textured;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
     }
-    flex: 0 0 50%;
-    height: auto;
 
-    @extend %textured;
-
-    svg {
-      width: 100%;
-      height: auto;
+    &__text {
+        flex: 0 0 40%;
+        padding: $spacing;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow-elevated;
+        border: 0.5px solid $gray-lightest;
+        margin-top: -$spacing;
+        background-color: #fff;
+        position: relative;
+        z-index: 9;
     }
-  }
 
-  &__text {
-    flex: 0 0 40%;
-    padding: $spacing;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow-elevated;
-    border: 0.5px solid $gray-lightest;
-    margin-top: -$spacing;
-    background-color: #fff;
-    position: relative;
-    z-index: 9;
-  }
+    &__heading {
+        margin-bottom: math.div($spacing, 2);
+        font-size: ms(3);
+    }
 
-  &__heading {
-    margin-bottom: $spacing/2;
-    font-size: ms(3);
-  }
-
-  &__description {
-    margin-bottom: $spacing/2;
-    font-size: ms(0);
-  }
+    &__description {
+        margin-bottom: math.div($spacing, 2);
+        font-size: ms(0);
+    }
 }

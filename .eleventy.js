@@ -62,6 +62,10 @@ module.exports = function (config) {
     let markdownLib = markdownIt(markdownItOptions).use(mila, milaOptions)
     config.setLibrary('md', markdownLib)
 
+    config.addCollection('groups', (collection) => {
+        return collection.getFilteredByGlob('./src/groups/*.md')
+    })
+
     // Layouts
     config.addLayoutAlias('base', 'base.njk')
     config.addLayoutAlias('post', 'post.njk')

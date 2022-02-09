@@ -34,12 +34,12 @@
             font-weight: 900;
             line-height: $heading-line-height;
             max-width: 20em;
-            margin-top: $spacing/2;
-            margin-bottom: $spacing/2;
+            margin-top: math.div($spacing, 2);
+            margin-bottom: math.div($spacing, 2);
 
             @include orientation(portrait) {
-                margin-left: $spacing/2;
-                margin-right: $spacing/2;
+                margin-left: math.div($spacing, 2);
+                margin-right: math.div($spacing, 2);
             }
 
             &::before,

@@ -1,90 +1,89 @@
 .clh {
-  padding: 4 * $spacing 0;
+    padding: 4 * $spacing 0;
 
-  .container {
-    @include orientation(landscape) {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-  }
-
-  &__image {
-    display: block;
-    flex: 1;
-
-    svg {
-      width: 100%;
-      height: auto;
-      display: block;
-      @include orientation(portrait) {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .container {
+        @include orientation(landscape) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 
-    @extend %textured;
-  }
+    &__image {
+        display: block;
+        flex: 1;
 
-  &__text {
-    flex: 0 0 47.5%;
-    padding-right: 2 * $spacing;
-    @include orientation(portrait) {
-      padding-right: 0;
-      padding-top: 2 * $spacing;
-    }
-  }
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            @include orientation(portrait) {
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
 
-  &__heading {
-    margin-bottom: $spacing/2;
-    font-size: ms(3);
-  }
-
-  &__description {
-    margin-bottom: $spacing/2;
-    font-size: ms(0);
-  }
-
-  &__box {
-    padding: $spacing;
-    background-color: #fff;
-    border: 0.5px solid $gray-lightest;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    width: 20rem;
-    margin-left: $spacing;
-    margin-top: $spacing;
-    text-align: center;
-
-    @include orientation(portrait) {
-      width: 30rem;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: $spacing;
+        @extend %textured;
     }
 
-    &__item {
-      text-align: left;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      font-size: ms(-1);
-
-      + .clh__box__item {
-        margin-top: $spacing/2;
-      }
+    &__text {
+        flex: 0 0 47.5%;
+        padding-right: 2 * $spacing;
+        @include orientation(portrait) {
+            padding-right: 0;
+            padding-top: 2 * $spacing;
+        }
     }
 
-    .icon {
-      width: 2 * $spacing;
-      height: auto;
-      margin-right: $spacing/2;
-      margin-top: $spacing/4;
+    &__heading {
+        margin-bottom: math.div($spacing, 2);
+        font-size: ms(3);
     }
 
-    .button {
-      margin-top: $spacing;
+    &__description {
+        margin-bottom: math.div($spacing, 2);
+        font-size: ms(0);
     }
-  }
 
+    &__box {
+        padding: $spacing;
+        background-color: #fff;
+        border: 0.5px solid $gray-lightest;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        width: 20rem;
+        margin-left: $spacing;
+        margin-top: $spacing;
+        text-align: center;
+
+        @include orientation(portrait) {
+            width: 30rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: $spacing;
+        }
+
+        &__item {
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            font-size: ms(-1);
+
+            + .clh__box__item {
+                margin-top: math.div($spacing, 2);
+            }
+        }
+
+        .icon {
+            width: 2 * $spacing;
+            height: auto;
+            margin-right: math.div($spacing, 2);
+            margin-top: math.div($spacing, 4);
+        }
+
+        .button {
+            margin-top: $spacing;
+        }
+    }
 }
