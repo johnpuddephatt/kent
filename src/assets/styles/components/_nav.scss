@@ -2,6 +2,7 @@
     &__menu {
         display: none;
         position: absolute;
+        z-index: 999;
         left: 0;
         right: 0;
         background-color: #fff;
