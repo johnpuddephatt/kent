@@ -9,8 +9,6 @@ eleventyNavigation:
     key: our events
 ---
 
-You can check out some of our past events by watching them on our You Tube channel here: <!--StartFragment-->
+Here you’ll find details of upcoming events as well as videos of many of our past events.
 
-[Kent Community Housing Hub - YouTube](https://www.youtube.com/channel/UCwgnjYptcVRoMeWrIw2a3sg)
-
-<!--EndFragment-->
+{% include "events.njk" %}

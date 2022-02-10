@@ -187,7 +187,18 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Date', name: 'date', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-          - { label: 'Link', name: 'link', widget: 'string' }
+          - {
+                label: 'Booking link',
+                name: 'booking_link',
+                widget: 'string',
+                hint: 'Enter full URL including the preceding https://...',
+            }
+          - {
+                label: 'YouTube embed code',
+                name: 'youtube',
+                widget: 'text',
+                hint: 'Click the "share" button on YouTube then "embed code".',
+            }
     - name: 'pages'
       label: 'Pages'
       folder: 'src/pages'

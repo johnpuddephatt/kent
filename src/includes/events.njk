@@ -1,0 +1,54 @@
+<div class="tabbed">
+<input type="radio" id="tab1" name="css-tabs" {% if collections.future_events.length %} checked {% endif %}>
+<input type="radio" id="tab2" name="css-tabs" {% if not collections.future_events.length %}checked{% endif %}>
+
+<ul class="tabs">
+<li class="tab"><label for="tab1">Upcoming events</label></li>
+<li class="tab"><label for="tab2">Past events</label></li>
+</ul>
+
+<div class="tab-content">
+{% for event in collections.future_events %}
+<div class="event-item">
+<div class="event-item--text">
+
+<div class="event-item--date">{{ event.data.date | dateToFormat('dd LLL yyyy') }}</div>
+<h3 class="event-item--title">{{ event.data.title }}</h3>
+<div class="event-item--body">
+    {{ event.templateContent | safe }}
+</div>
+{% if event.data.booking_link %}
+<a class="button event-item--booking-link" class="button" href="{{event.data.booking_link}}" target="_blank">Book your place</a>
+{% endif %}
+</div>
+</div>
+{% endfor %}
+
+{% if not collections.future_events.length %}
+<div class="alert">
+We have no upcoming events scheduled.
+</div>
+{% endif %}
+
+</div>
+
+<div class="tab-content">
+{% for event in collections.past_events %}
+<div class="event-item">
+<div class="event-item--video">
+{{ event.data.youtube | safe }}
+</div>
+<div class="event-item--text">
+<div class="event-item--date">{{ event.data.date | dateToFormat('dd LLL yyyy') }}</div>
+<h3 class="event-item--title">{{ event.data.title }}</h3>
+<div class="event-item--body">
+{{ event.templateContent | safe }}
+</div>
+</div>
+
+
+
+</div>
+{% endfor %}
+</div>
+</div>

@@ -1,0 +1,62 @@
+.tabbed {
+    overflow-x: hidden; /* so we could easily hide the radio inputs */
+    margin: $spacing 0 2 * $spacing;
+    padding-bottom: 2 * $spacing;
+    border-bottom: 1px solid $brand-purple-light;
+}
+
+.tabbed [type='radio'] {
+    /* hiding the inputs */
+    display: none;
+}
+
+.tab {
+    list-style-type: none;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+    &::before {
+        content: none !important;
+    }
+}
+
+.tabs {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    gap: math.div($spacing, 2);
+}
+.tab > label {
+    display: block;
+    margin-bottom: -1px;
+    padding: 12px 15px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 99999px;
+}
+.tab:hover label {
+    border-top-color: #333;
+    color: #333;
+}
+
+.tab-content {
+    display: none;
+}
+
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed [type='radio']:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.tabbed
+    [type='radio']:nth-of-type(2):checked
+    ~ .tabs
+    .tab:nth-of-type(2)
+    label {
+    background: $brand-purple-light;
+    color: $brand-purple;
+}
+
+.tabbed [type='radio']:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.tabbed [type='radio']:nth-of-type(2):checked ~ .tab-content:nth-of-type(2) {
+    display: block;
+}

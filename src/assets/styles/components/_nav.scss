@@ -15,6 +15,9 @@
     }
     &__link {
         font-size: ms(-1);
+        @include mq(xl) {
+            font-size: ms(0);
+        }
         display: block;
         font-weight: 900;
         text-decoration: none;
@@ -22,7 +25,7 @@
         text-transform: lowercase;
     }
     &__social {
-        margin-left: math.div($spacing, 2);
+        margin-left: math.div($spacing, 4);
         @include mq-down(lg) {
             display: inline-block;
             margin: $spacing math.div($spacing, 2) $spacing

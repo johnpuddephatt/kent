@@ -66,6 +66,29 @@ module.exports = function (config) {
         return collection.getFilteredByGlob('./src/groups/*.md')
     })
 
+    const futureEvents = (event) => {
+        const now = new Date()
+        return event.date >= now
+    }
+
+    const pastEvents = (event) => {
+        const now = new Date()
+        return event.date <= now
+    }
+
+    config.addCollection('future_events', (collection) => {
+        return collection
+            .getFilteredByGlob('./src/events/*.md')
+            .filter(futureEvents)
+    })
+
+    config.addCollection('past_events', (collection) => {
+        return collection
+            .getFilteredByGlob('./src/events/*.md')
+            .filter(pastEvents)
+            .reverse()
+    })
+
     // Layouts
     config.addLayoutAlias('base', 'base.njk')
     config.addLayoutAlias('post', 'post.njk')
