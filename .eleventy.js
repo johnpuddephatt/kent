@@ -63,7 +63,9 @@ module.exports = function (config) {
     config.setLibrary('md', markdownLib)
 
     config.addCollection('groups', (collection) => {
-        return collection.getFilteredByGlob('./src/groups/*.md')
+        return collection
+            .getFilteredByGlob('./src/groups/*.md')
+            .sort((a, b) => a.data.order - b.data.order)
     })
 
     const futureEvents = (event) => {
