@@ -3,14 +3,13 @@ layout: page
 title: Resources
 subtitle: Information to help you get started
 intro: >
-    There are many organisations in the UK working to help community led housing
-    become a mainstream housing option.
+  There are many organisations in the UK working to help community led housing
+  become a mainstream housing option.
 icon: 5
 image: /assets/images/seaside.jpeg
 eleventyNavigation:
-    key: Resources
+  key: Resources
 ---
-
 ## National Organisations
 
 ### [Community Led Homes](https://www.communityledhomes.org.uk/)
@@ -71,4 +70,8 @@ Also teaming up with Dover, Thanet and Canterbury, Folkestone and Hythe Council 
 
 ### [Canterbury City Council - Community Led Housing](https://www.canterbury.gov.uk/housing/community-led-housing/)
 
-Also awarded funding via the Government's Community Housing Fund, Canterbury City Council are helping groups deliver community led housing including through access to funds.[](https://www.canterbury.gov.uk/housing/community-led-housing/)
+Also awarded funding via the Government's Community Housing Fund, Canterbury City Council are helping groups deliver community led housing including through access to funds.
+
+## Action with Communities in Rural Kent
+
+We are hosted by Rural Kent and work closely with the [Rural Housing Enabling Service](https://ruralkent.org.uk/services/housing/) providing another method of affordable housing development, specifically in rural areas. Not community led as such, but working in partnership with Parish Councils, Housing Associations and Local Authorities[](https://www.canterbury.gov.uk/housing/community-led-housing/)
