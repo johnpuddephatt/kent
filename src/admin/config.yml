@@ -179,13 +179,13 @@ collections:
                 label: 'Facebook',
                 name: 'facebook',
                 widget: 'string',
-                required: false,
+                required: false
             }
           - {
                 label: 'Twitter',
                 name: 'twitter',
                 widget: 'string',
-                required: false,
+                required: false
             }
     - name: 'events'
       label: 'Events'
@@ -195,21 +195,26 @@ collections:
           preview: false
       fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Date', name: 'date', widget: 'string' }
+          - {
+                label: 'Date',
+                name: 'date',
+                widget: 'datetime',
+                time_format: false
+            }
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - {
                 label: 'Booking link',
                 name: 'booking_link',
                 widget: 'string',
                 hint: 'Enter full URL including the preceding https://...',
-                required: false,
+                required: false
             }
           - {
                 label: 'YouTube embed code',
                 name: 'youtube',
                 widget: 'text',
                 hint: 'Click the "share" button on YouTube then "embed code".',
-                required: false,
+                required: false
             }
     - name: 'pages'
       label: 'Pages'
@@ -227,7 +232,7 @@ collections:
                 label: 'Icon',
                 name: 'icon',
                 widget: 'select',
-                options: ['1', '2', '3', '4', '5'],
+                options: ['1', '2', '3', '4', '5']
             }
           - { label: 'Image', name: 'image', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -239,7 +244,7 @@ collections:
                       label: 'Label',
                       name: 'key',
                       widget: 'string',
-                      required: false,
+                      required: false
                   }
     - name: 'posts'
       label: 'Blog'
@@ -257,6 +262,6 @@ collections:
                 label: 'Image',
                 name: 'icon',
                 widget: 'select',
-                options: ['environment', 'house', 'houses', 'job'],
+                options: ['environment', 'house', 'houses', 'job']
             }
           - { label: 'Body', name: 'body', widget: 'markdown' }
